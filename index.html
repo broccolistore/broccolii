@@ -140,18 +140,20 @@ Swal.fire({
 
         <label for="phone">رقم الهاتف:</label>
         <input style="width: 98%;" class="addOrderInput" type="number" placeholder="" dir="auto" autocomplete="off" id="phone" value="">
+        
+        <label for="city">المحافظة/العنوان</label>
+        <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="city" value="">
+        
+        <label for="email">عنوان البريد الإلكتروني:</label>
+        <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="email" value="">
 
         <label for="active">الطلب:</label>
         <input style="width: 98%;" class="addOrderInput" id="active" type="text" dir="auto" autocomplete="off">
 
-        <label for="email">عنوان البريد الإلكتروني:</label>
-        <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="email" value="">
 
         <label for="note">الملاحظة:</label>
         <textarea style="width: 98%; " class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="note" value=""></textarea>
 
-        <label for="city">المحافظة/العنوان</label>
-        <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="city" value="">
 
 
     </div>
@@ -190,7 +192,7 @@ Swal.fire({
           AddNewOrder(name,phone,active,city,email,id);
         } else {
           Swal.fire(
-              'برجاة كتابة البيانات بشكل صحيح',
+              'برجاء كتابة البيانات بشكل صحيح',
               '',
               'error',
             )
