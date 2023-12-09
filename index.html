@@ -13,6 +13,8 @@
             justify-content: space-evenly;
             align-items: center;
             background-image: url(images/back.jpg);
+            background-size: cover;
+            background-position: 80% 40%;
         }
         .main {
             display:flex;
@@ -20,7 +22,7 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            background-color: rgba(206, 200, 200, 0.229);
+            background-color: rgba(206, 200, 200, 0.241);
             margin-top: 50px;
             border-radius: 20px;
             box-shadow: 5px 5px 5px inset,5px 5px 5px ;
@@ -81,7 +83,7 @@
           opacity: 0.8;
           padding: 10px;
         }
-        a {
+        .main a {
             border-bottom: 1px solid black;
         }
 
@@ -91,7 +93,7 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
-            background-color: rgba(206, 200, 200, 0.646);
+            background-color: rgba(206, 200, 200, 0.472);
             margin-top: 50px;
             border-radius: 20px;
             box-shadow: 5px 5px 5px inset,5px 5px 5px ;
@@ -99,6 +101,10 @@
             transition: padding .5s;
             margin-top: 30px;
             width: 300px;
+        }
+        .info img:hover {
+            padding: 0 !important;
+            opacity: 1;
         }
 
         .description {
@@ -116,6 +122,8 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+            background-position: 20% 50%;
+            background-size: 30%;
           } 
         }
         @media (max-width: 1600px){
@@ -137,6 +145,13 @@
           }
 
         }
+        .in-logo {
+          width: 89px; 
+          border-radius: 50%;
+        }
+        .in-logo:hover {
+          opacity: 0.6 !important;
+        }
 </style>
 </head>
 <body>
@@ -152,6 +167,7 @@
 </div>
 
 <div class="info">
+  <a href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank"><img class="in-logo" src="images/logo.jpeg" style="" alt=""></a>
   <h2 class="h-main">Broccoli store</h2>
   <p class="description">
     تقدم شركة "Broccoli" خدمة عالية الجودة للعملاء
@@ -181,7 +197,6 @@
 </div>
 
 
-    
 </body>
 
 <script src="./cdn/swalCdn.js"></script>
