@@ -3,7 +3,7 @@
 <head>
     <title>قائمة الخضروات</title>
     <style>
-        @media (max-width: 651px){
+/*         @media (max-width: 651px){
             .main {
                 font-size: 30px;
                 width:400px;
@@ -24,10 +24,6 @@
             border-collapse: collapse;
             width: 25%;
             height: 700px;
-            /* background-image: url(../images/imag.png);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: 100%; */
             z-index: 5;
             background-color: transparent;
 
@@ -36,11 +32,9 @@
         th, td {
             text-align: left;
             padding: 8px;
-            /* border-bottom: 1px solid #ddd; */
         }
 
         tr:nth-child(even) {
-            /* background-color: #f2f2f2; */
         }
         tbody tr {
 
@@ -73,11 +67,32 @@
           background-color: #ddd;
           border-top: 2px solid;
           
+        } */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ddd;
         }
+        .weiting {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        div h1, p {
+            color: white;
+        }
+        
     </style>
 </head>
 <body>
-<div class="main">
+    <div class="weiting">
+    <h1> سوف يتم ظهور قائمة الخضراوات والفاكهة ابتداء من يوم 11/12 الموافق يوم الاثنين القادم </h1>
+    <p>يرجي العلم ان قائمة المنتجات يتم تحديثها كل ثلالثة ايام نظرا الي سعر السوق </p>
+    </div>
+<!-- <div class="main">
     <table>
       <caption>خضراوات</caption>
         <thead>
@@ -349,11 +364,9 @@
                 <td></td>
                 <td></td>
               </tr>
-              
-            
         </tbody>
     </table>
               
-</div>
+</div> -->
 </body>
 </html>
