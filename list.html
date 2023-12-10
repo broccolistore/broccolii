@@ -122,6 +122,9 @@
         width: 100%;
         height: 100%;
       }
+      cption a {
+        animation-name: mobile;
+      }
     }
 
     @media (max-width: 451px) {
@@ -134,7 +137,7 @@
         height: 100%;
       }
       cption a {
-        animation-name: order-now;
+        animation-name: mobile;
       }
     }
     @keyframes order-now {
@@ -143,6 +146,14 @@
         color: black;
         font-weight: bold;
         padding: 6px;
+      }
+    }
+        @keyframes mobile {
+      to {
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        padding: 20px;
       }
     }
 
