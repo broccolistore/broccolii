@@ -3,18 +3,7 @@
 <head>
     <title>قائمة الخضروات</title>
     <style>
-        @media (max-width: 651px){
-            .main {
-                /* font-size: 30px;
-                width:400px; */
-            }
-        }
-        @media (max-width: 451px){
-            .main {
-                /* font-size: 35px;
-                width: 350px; */
-            }
-        }
+       
       body {
         display: flex;
         justify-content: space-evenly;
@@ -22,15 +11,14 @@
       }
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 10%;
             height: 100%;
-            z-index: 5;
             background-color: transparent;
         }
 
         th, td {
             text-align: left;
-            padding: 8px;
+            padding: 5px;
         }
 
         tr:nth-child(even) {
@@ -65,6 +53,21 @@
           color: rgb(7, 36, 62);
           background-color: #ddd;
           border-top: 2px solid;
+        }
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        @media (max-width: 651px){
+            .main {
+            flex-direction: column;
+            }
+        }
+        @media (max-width: 451px){
+            .main {
+                /* font-size: 35px;
+                width: 350px; */
+            }
         }
         /* section list start */
         /* body {
