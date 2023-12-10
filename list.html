@@ -5,15 +5,16 @@
     <style>
        
       body {
-        display: flex;
-        justify-content: space-evenly;
-        background-color: #c3d1d1;
+        /* display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #c3d1d1; */
       }
         table {
             border-collapse: collapse;
-            width: 10%;
-            height: 100%;
-            background-color: transparent;
+            /* width: 200%; */
+            background-color: bla;
+
         }
 
         th, td {
@@ -28,12 +29,16 @@
 
         }
         th {
-            background-color: #421305;
-            color: rgb(180, 209, 198);
+            background-color: #000000;
+            color: rgb(255, 255, 255);
             border: 5px solid rgba(250, 250, 250, 0.21);
+            font-weight: bold;
+            font-size: 20px;
         }
         td {
           border: 1px solid rgba(0, 0, 0, 0.298);
+          font-size: 18px;
+          font-weight: 700;
         }
         html {
           direction: rtl;
@@ -50,25 +55,37 @@
           border-radius: 30%;
         }
         caption {
-          color: rgb(7, 36, 62);
-          background-color: #ddd;
+          color: rgb(255, 255, 255);
+          background-color: #000000;
           border-top: 2px solid;
+          font-weight: bold;
+          font-size: 30px;
         }
         .main {
             display: flex;
             justify-content: space-evenly;
+            flex-direction: column;
         }
         @media (max-width: 651px){
             .main {
             flex-direction: column;
+            width: 100%;
+            }
+            table {
+                width: 100%;
+                height:100%;
             }
         }
         @media (max-width: 451px){
             .main {
-                /* font-size: 35px;
-                width: 350px; */
+               flex-direction: column;
+            }
+            table {
+                width: 100%;
+                height:100% ;
             }
         }
+
         /* section list start */
         /* body {
             width: 100%;
@@ -122,6 +139,8 @@
 
 
 <div class="main">
+<!--  section vegetable start  -->
+
     <table>
       <caption>خضراوات</caption>
         <thead>
@@ -135,132 +154,154 @@
         <tbody>
             <tr>
                 <td>طماطم</td>
-                <td>12.65</td>
-                <td>ثوم مستورد</td>
-                <td>165.00</td>
+                <td>15</td>
+                <td>___</td>
+                <td>__</td>
   
               </tr>
               <tr>
-                <td>بطاطس</td>
-                <td>29.45</td>
-                <td>ليمون</td>
-                <td>23.48</td>
+                <td>باذنجان مخدد</td>
+                <td>11</td>
+                <td>باذنجان عروس</td>
+                <td>11</td>
   
               </tr>
               <tr>
-                <td>بصل</td>
-                <td>42.50</td>
-                <td>فاصوليا</td>
-                <td>19.80</td>
+                <td>باذنجان رومي</td>
+                <td>8</td>
+                <td>فلفل رومي</td>
+                <td>25</td>
   
-              </tr>
-              <tr>
-                <td>خيار</td>
-                <td>23.00</td>
-                <td>بسلة</td>
-                <td>45.00</td>
-              </tr>
-              <tr>
-                <td>كوسة</td>
-                <td>23.00</td>
-                <td>بطاطا</td>
-                <td>23.55</td>
-              </tr>
-              <tr>
-                <td>باذنجان</td>
-                <td>18.50</td>
-                <td>ذرة حلوة</td>
-                <td>65.75</td>
-              </tr>
-              <tr>
-                <td>فلفل رومى</td>
-                <td>19.99</td>
-                <td>قرع عسل</td>
-                <td>80.99</td>
               </tr>
               <tr>
                 <td>فلفل الوان</td>
-                <td>47.98</td>
-                <td>بروكلى</td>
-                <td>42.98</td>
+                <td>60</td>
+                <td>فلفل حار</td>
+                <td>20</td>
               </tr>
               <tr>
-                <td>كرنب</td>
-                <td>45.00</td>
-                <td>مشروم</td>
-                <td>155.00</td>
+                <td>ليمون</td>
+                <td>20</td>
+                <td>ليمون اضاليا</td>
+                <td>11</td>
               </tr>
               <tr>
-                <td>جرجير</td>
-                <td>4.00</td>
-                <td>بقدونس</td>
-                <td>3.75</td>
+                <td>قرنبيط (ق)</td>
+                <td>19</td>
+                <td>بروكلي</td>
+                <td>30</td>
               </tr>
               <tr>
-                <td>كزبره</td>
-                <td>3.75</td>
-                <td>شبت</td>
-                <td>3.75</td>
+                <td>كرنب (ق)</td>
+                <td>32</td>
+                <td> كرنب احمر سلطة (ق)</td>
+                <td>19</td>
               </tr>
               <tr>
-                <td>ملوخية</td>
-                <td></td>
-                <td>سبانخ</td>
-                <td></td>
+                <td>كرنب ابيض سلطة (ق) </td>
+                <td>19</td>
+                <td>قرع عسل</td>
+                <td>15</td>
               </tr>
               <tr>
-                <td>لفت</td>
-                <td></td>
+                <td>خيار</td>
+                <td>20</td>
+                <td>بطاطس</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>بصل احمر</td>
+                <td>65</td>
+                <td>بصل ابيض</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>جزر</td>
+                <td>17</td>
+                <td>كوسة</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>بطاطا</td>
+                <td>12</td>
                 <td>قلقاس</td>
-                <td></td>
+                <td>27</td>
               </tr>
               <tr>
-                <td>كرات</td>
-                <td></td>
-                <td>فجل</td>
-                <td></td>
+                <td>ذرة حلوة(3ق)</td>
+                <td>36</td>
+                <td>ثوم(200جرام)</td>
+                <td>42</td>
               </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>بسلة</td>
+                <td>40</td>
+                <td>فاصولياء</td>
+                <td>16</td>
               </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>بنجر</td>
+                <td>7</td>
+                <td>لفت</td>
+                <td>4</td>
               </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>فجل احمر</td>
+                <td>8</td>
+                <td>كابوتشة(ق)</td>
+                <td>11</td>
               </tr>
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>خس(ق)</td>
+                <td>6</td>
+                <td>ملوخية</td>
+                <td>30</td>
               </tr>
               <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                <td>سبانخ</td>
+                <td>26</td>
+                <td>سلق</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                  <td>كرات(ق)</td>
+                  <td>9</td>
+                  <td>كرفس(ق)</td>
+                  <td>3</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-      
+                    <td>(125جرام)زعتر</td>
+                    <td>11</td>
+                    <td>(125جرام)روزماري</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <td>خضرة مشكلة</td>
+                    <td>6</td>
+                    <td>جرجير</td>
+                    <td>2.5</td>
+                  </tr>
+                  <tr>
+                    <td>بقدونس</td>
+                    <td>2.5</td>
+                    <td>كزبرة</td>
+                    <td>2.5</td>
+                  </tr>
+                  <tr>
+                    <td>شبت</td>
+                    <td>2.5</td>
+                    <td>مشروم(125جرام)</td>
+                    <td>55</td>
                   </tr>
         </tbody>
     </table>
+<!--  section vegetable end  -->
+
+
+<!--  section frutes start  -->
+
     <table>
-      <caption>فاكهة</caption>
+      <caption>فواكه</caption>
         <thead>
             <tr>
                 <th>الصنف</th>
@@ -271,69 +312,69 @@
         </thead>
         <tbody>
             <tr>
-                <td>برتقال</td>
-                <td>19.20</td>
-                <td>برتقال عصير</td>
-                <td>20.00</td>
+                <td>يوسفي(بلدي)</td>
+                <td>20</td>
+                <td>يوسفي(كلمنتين)</td>
+                <td>11</td>
   
               </tr>
             <tr>
-              <td>يوسفى ماندرين</td>
-              <td>19.99</td>
-              <td>يوسفى كلمنتين</td>
-              <td>22.34</td>
+              <td>برتقال(بسرة)</td>
+              <td>15</td>
+              <td>برتقال(بلدي)</td>
+              <td>15</td>
             </tr>
             <tr>
-              <td>موز محلى</td>
-              <td>23.50</td>
-              <td>موز مستورد</td>
-              <td>62.45</td>
+              <td>برتقال(سكري)</td>
+              <td>15</td>
+              <td>تفاح احمر</td>
+              <td>70</td>
+
+            </tr>
+            <tr>
+              <td>تفاح اخضر</td>
+              <td>120</td>
+              <td>تفاح اصفر</td>
+              <td>75</td>
 
             </tr>
             <tr>
               <td>رومان</td>
-              <td>45.87</td>
-              <td>كيوى</td>
-              <td>125.00</td>
-
-            </tr>
-            <tr>
-              <td>جريب فروت</td>
-              <td>25.85</td>
-              <td>افوكادو</td>
-              <td>120.00</td>
-            </tr>
-            <tr>
-              <td>تفاح أصفر</td>
-              <td>85.00</td>
-              <td>تفاح احمر ايطالى</td>
-              <td>65.70</td>
-            </tr>
-            <tr>
-              <td>تفاح أخضر مستورد</td>
-              <td>120.00</td>
-              <td>تفاح احمر جالا</td>
-              <td>55.86</td>
-            </tr>
-            <tr>
+              <td>24</td>
               <td>جوافة</td>
-              <td>35.00</td>
-              <td>مشمش</td>
-              <td></td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>موز</td>
+              <td>19</td>
+              <td>فراولة</td>
+              <td>32</td>
+            </tr>
+            <tr>
+              <td>عنب</td>
+              <td>22</td>
+              <td>مانجا</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>قشطة(بلدي)</td>
+              <td>35</td>
+              <td>قشطة(عبدالرازق)</td>
+              <td>60</td>
             </tr>
             <tr>
               <td>برقوق</td>
-              <td></td>
-              <td>تين</td>
-              <td></td>
+              <td>47</td>
+              <td>افوكادو</td>
+              <td>165</td>
             </tr>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>جريب فروت</td>
+              <td>13</td>
+              <td>كيوي(ق)</td>
+              <td>8</td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td></td>
               <td></td>
               <td></td>
@@ -392,20 +433,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
-              </tr>
+              </tr> -->
         </tbody>
     </table>
               
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-<!-- ===>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-
-
