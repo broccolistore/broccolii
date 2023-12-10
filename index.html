@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -204,53 +203,55 @@
         position: relative;
         margin-top: 10px;
       }
-    }
-    .foot {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 50px;
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      border-top-right-radius: 50px;
-      border-top-left-radius: 50px;
-    }
-    @media (max-width: 451px){
-      .foot {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+      .foot .phone {
+        font-size: 8px;
+        right: 20px;
+        margin-bottom: 15px; 
       }
       .foot .gmail {
-        font-size: 5px;
+        font-size: 8px;
+        margin-bottom: 15px;
+        left: 0;
       }
     }
-    .ot {
-      animation-name: order;
-      animation-duration: 2s;
-      animation-timing-function: ease;
-      animation-iteration-count: infinite;
-      animation-fill-mode: backwards;
-      animation-direction: alternate;
+    .addNewOrder {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.addNewOrder::before {
+    content: 'اطلب الأن';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anim 3s ease forwards;
+    animation-iteration-count: infinite;
+
+}
+
+.addNewOrder:hover::before {
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
     }
-    /* .addNewOrder {
-      animation-name: order;
-      animation-duration: 1s;
-      animation-timing-function: ease;
-      animation-iteration-count: infinite;
-    } */
-    @keyframes order {
-      to {
-        /* transform: scale(1.1); */
-        font-size: 10px;
-        color: rgb(0, 0, 0);
-        background-color: rgb(225, 217, 170);
-        border-radius: 50%;
-        padding: 5%;
-      }
+    50% {
+        transform: scale(1.3);
     }
+    100% {
+        transform: scale(1);
+    }
+}
   </style>
 </head>
 
@@ -258,7 +259,7 @@
   <div class="main">
     <a href="list.html" target="_blank"><button class="list">انظر قائمة الخضراوات</button></a>
     <button class="addNewOrder mainClassForSetColor">
-     <span class="ot"> اطلب الأن </span>
+
     </button>
     <a href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank"><img src="images/facebook.png"
         alt=""></a>
@@ -307,13 +308,12 @@
     </span>
 
    
-<!-- section masenger start   -->
+<!-- section masenger end   -->
   <footer class="foot">
     Made by Mahemoud hamed © 2023
-    <span class="gmail" style="position: absolute; left: 40px;">Gmail: mahemoudabuelsaoud@gmail.com</span>
    </footer>
 </body>
-<!--  -->
+<!-- section masenger start -->
    <script>
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "1839654556272371");
@@ -337,7 +337,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-<!--    -->
+<!-- section masenger end   -->
 <script src="./cdn/swalCdn.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
