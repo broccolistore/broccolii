@@ -1,92 +1,150 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>قائمة الخضروات</title>
-    <style>
-      body {
-        /* display: grid;
+  <title>قائمة الخضروات</title>
+  <style>
+    body {
+      /* display: grid;
         justify-content: center;
         align-items: center;
         background-color: #c3d1d1; */
+    }
+
+    table {
+      border-collapse: collapse;
+      /* width: 200%; */
+      background-color: bla;
+
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 5px;
+    }
+
+    tr:nth-child(even) {}
+
+    tbody tr {}
+
+    th {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      border: 5px solid rgba(250, 250, 250, 0.21);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    td {
+      border: 1px solid rgba(0, 0, 0, 0.298);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    html {
+      direction: rtl;
+    }
+
+    thead tr th {
+      text-align: center;
+    }
+
+    .logo {
+      position: absolute;
+      left: 150px;
+      top: 25%;
+      z-index: 2;
+      width: 380px;
+      border-radius: 30%;
+    }
+
+    caption {
+      color: rgb(255, 255, 255);
+      background-color: #000000;
+      border-top: 2px solid;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    caption a {
+      color: rgba(0, 0, 0, 0.604);
+      font-size: 15px;
+      background-color: rgb(255, 255, 255);
+      padding: 5px;
+      text-decoration: none;
+      /* border-top-right-radius: 50%;
+      border-top-left-radius: 50%; */
+      border-radius: 50%;
+      display: inline-block;
+      transition: all 0.2s ease;
+      animation-name: order-now;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      animation-delay: 1s;
+      animation-fill-mode: backwards;
+      animation-direction: alternate;
+
+
+    }
+
+    caption a:hover {
+      transform: scale(1.03);
+      /* تغيير الحجم الحافة والعرض*/
+      color: red;
+    }
+
+    .main {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+
+    footer {
+
+    }
+    .foot {
+      text-align: center;
+      background-color: #000000;
+      color: white;
+      
+    }
+
+
+    @media (max-width: 651px) {
+      .main {
+        flex-direction: column;
+        width: 100%;
       }
-        table {
-            border-collapse: collapse;
-            /* width: 200%; */
-            background-color: bla;
 
-        }
+      table {
+        width: 100%;
+        height: 100%;
+      }
+    }
 
-        th, td {
-            text-align: left;
-            padding: 5px;
-        }
+    @media (max-width: 451px) {
+      .main {
+        flex-direction: column;
+      }
 
-        tr:nth-child(even) {
+      table {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @keyframes order-now {
+      to {
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        padding: 6px;
+      }
+    }
 
-        }
-        tbody tr {
-
-        }
-        th {
-            background-color: #000000;
-            color: rgb(255, 255, 255);
-            border: 5px solid rgba(250, 250, 250, 0.21);
-            font-weight: bold;
-            font-size: 40px;
-        }
-        td {
-          border: 1px solid rgba(0, 0, 0, 0.298);
-          font-size: 30px;
-          font-weight: 700;
-        }
-        html {
-          direction: rtl;
-        }
-        thead tr th {
-          text-align: center;
-        }
-        .logo {
-          position: absolute;
-          left: 150px;
-          top: 25%;
-          z-index: 2;
-          width: 380px;
-          border-radius: 30%;
-        }
-        caption {
-          color: rgb(255, 255, 255);
-          background-color: #000000;
-          border-top: 2px solid;
-          font-weight: bold;
-          font-size: 60px;
-        }
-        .main {
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;
-        }
-        @media (max-width: 651px){
-            .main {
-            flex-direction: column;
-            width: 100%;
-            }
-            table {
-                width: 100%;
-                height:100%;
-            }
-        }
-        @media (max-width: 451px){
-            .main {
-               flex-direction: column;
-            }
-            table {
-                width: 100%;
-                height:100% ;
-            }
-        }
-
-        /* section list start */
-        /* body {
+    /* section list start */
+    /* body {
             width: 100%;
             height: 100%;
             display: flex;
@@ -122,258 +180,258 @@
             border-radius: 50%;
             margin: 5px;
         } */
-        /* section list end */
-
-        
-    </style>
+    /* section list end */
+  </style>
 </head>
+
 <body>
-    <!-- section list start -->
-    <!-- <div class="weiting">
+  <!-- section list start -->
+  <!-- <div class="weiting">
     <h1> سوف يتم ظهور قائمة الخضراوات والفاكهة إبتداء<br> من يوم الاثنين الموافق 12/11 القادم .</h1>
     <p>يرجي العلم ان قائمة المنتجات يتم تحديثها كل ثلاثة ايام نظرا الي سعر السوق. </p>
     <a href="index.html">يمكنك الرجوع من  <mark>هنا</mark>وطلب المنتج الذي تريدة من خلال تسجيل البيانات وسيتم التواصل معك في  خلال  60 دقيقة . </a>
     </div> -->
-    <!-- section list end -->
+  <!-- section list end -->
 
 
-<div class="main">
-<!--  section vegetable start  -->
+  <div class="main">
+    <!--  section vegetable start  -->
 
     <table>
-      <caption>خضراوات</caption>
-        <thead>
-            <tr>
-                <th>الصنف</th>
-                <th>سعر الكيلو</th>
-                <th>الصنف</th>
-                <th>سعر الكيلو</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>طماطم</td>
-                <td>15</td>
-                <td>___</td>
-                <td>__</td>
-  
-              </tr>
-              <tr>
-                <td>باذنجان مخدد</td>
-                <td>11</td>
-                <td>باذنجان عروس</td>
-                <td>11</td>
-  
-              </tr>
-              <tr>
-                <td>باذنجان رومي</td>
-                <td>8</td>
-                <td>فلفل رومي</td>
-                <td>25</td>
-  
-              </tr>
-              <tr>
-                <td>فلفل الوان</td>
-                <td>60</td>
-                <td>فلفل حار</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>ليمون</td>
-                <td>20</td>
-                <td>ليمون اضاليا</td>
-                <td>11</td>
-              </tr>
-              <tr>
-                <td>قرنبيط (ق)</td>
-                <td>19</td>
-                <td>بروكلي</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>كرنب (ق)</td>
-                <td>32</td>
-                <td> كرنب احمر سلطة (ق)</td>
-                <td>19</td>
-              </tr>
-              <tr>
-                <td>كرنب ابيض سلطة (ق) </td>
-                <td>19</td>
-                <td>قرع عسل</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>خيار</td>
-                <td>20</td>
-                <td>بطاطس</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>بصل احمر</td>
-                <td>65</td>
-                <td>بصل ابيض</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>جزر</td>
-                <td>17</td>
-                <td>كوسة</td>
-                <td>25</td>
-              </tr>
-              <tr>
-                <td>بطاطا</td>
-                <td>12</td>
-                <td>قلقاس</td>
-                <td>27</td>
-              </tr>
-              <tr>
-                <td>ذرة حلوة(3ق)</td>
-                <td>36</td>
-                <td>ثوم(200جرام)</td>
-                <td>42</td>
-              </tr>
-              <tr>
-                <td>بسلة</td>
-                <td>40</td>
-                <td>فاصولياء</td>
-                <td>16</td>
-              </tr>
-              <tr>
-                <td>بنجر</td>
-                <td>7</td>
-                <td>لفت</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>فجل احمر</td>
-                <td>8</td>
-                <td>كابوتشة(ق)</td>
-                <td>11</td>
-              </tr>
-              <tr>
-                <td>خس(ق)</td>
-                <td>6</td>
-                <td>ملوخية</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>سبانخ</td>
-                <td>26</td>
-                <td>سلق</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                  <td>كرات(ق)</td>
-                  <td>9</td>
-                  <td>كرفس(ق)</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                    <td>(125جرام)زعتر</td>
-                    <td>11</td>
-                    <td>(125جرام)روزماري</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td>خضرة مشكلة</td>
-                    <td>6</td>
-                    <td>جرجير</td>
-                    <td>2.5</td>
-                  </tr>
-                  <tr>
-                    <td>بقدونس</td>
-                    <td>2.5</td>
-                    <td>كزبرة</td>
-                    <td>2.5</td>
-                  </tr>
-                  <tr>
-                    <td>شبت</td>
-                    <td>2.5</td>
-                    <td>مشروم(125جرام)</td>
-                    <td>55</td>
-                  </tr>
-        </tbody>
+      <caption>خضراوات <a href="index.html" target="_blank">اطلب الأن</a></caption>
+      <thead>
+        <tr>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>طماطم</td>
+          <td>15</td>
+          <td>___</td>
+          <td>__</td>
+
+        </tr>
+        <tr>
+          <td>باذنجان مخدد</td>
+          <td>11</td>
+          <td>باذنجان عروس</td>
+          <td>11</td>
+
+        </tr>
+        <tr>
+          <td>باذنجان رومي</td>
+          <td>8</td>
+          <td>فلفل رومي</td>
+          <td>25</td>
+
+        </tr>
+        <tr>
+          <td>فلفل الوان</td>
+          <td>60</td>
+          <td>فلفل حار</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>ليمون</td>
+          <td>20</td>
+          <td>ليمون اضاليا</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>قرنبيط (ق)</td>
+          <td>19</td>
+          <td>بروكلي</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>كرنب (ق)</td>
+          <td>32</td>
+          <td> كرنب احمر سلطة (ق)</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>كرنب ابيض سلطة (ق) </td>
+          <td>19</td>
+          <td>قرع عسل</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>خيار</td>
+          <td>20</td>
+          <td>بطاطس</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>بصل احمر</td>
+          <td>65</td>
+          <td>بصل ابيض</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>جزر</td>
+          <td>17</td>
+          <td>كوسة</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>بطاطا</td>
+          <td>12</td>
+          <td>قلقاس</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>ذرة حلوة(3ق)</td>
+          <td>36</td>
+          <td>ثوم(200جرام)</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>بسلة</td>
+          <td>40</td>
+          <td>فاصولياء</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td>بنجر</td>
+          <td>7</td>
+          <td>لفت</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>فجل احمر</td>
+          <td>8</td>
+          <td>كابوتشة(ق)</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>خس(ق)</td>
+          <td>6</td>
+          <td>ملوخية</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>سبانخ</td>
+          <td>26</td>
+          <td>سلق</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>كرات(ق)</td>
+          <td>9</td>
+          <td>كرفس(ق)</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>(125جرام)زعتر</td>
+          <td>11</td>
+          <td>(125جرام)روزماري</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>خضرة مشكلة</td>
+          <td>6</td>
+          <td>جرجير</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td>بقدونس</td>
+          <td>2.5</td>
+          <td>كزبرة</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td>شبت</td>
+          <td>2.5</td>
+          <td>مشروم(125جرام)</td>
+          <td>55</td>
+        </tr>
+      </tbody>
     </table>
-<!--  section vegetable end  -->
+    <!--  section vegetable end  -->
 
 
-<!--  section frutes start  -->
+    <!--  section frutes start  -->
 
     <table>
-      <caption>فواكه</caption>
-        <thead>
-            <tr>
-                <th>الصنف</th>
-                <th>سعر الكيلو</th>
-                <th>الصنف</th>
-                <th>سعر الكيلو</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>يوسفي(بلدي)</td>
-                <td>20</td>
-                <td>يوسفي(كلمنتين)</td>
-                <td>11</td>
-  
-              </tr>
-            <tr>
-              <td>برتقال(بسرة)</td>
-              <td>15</td>
-              <td>برتقال(بلدي)</td>
-              <td>15</td>
-            </tr>
-            <tr>
-              <td>برتقال(سكري)</td>
-              <td>15</td>
-              <td>تفاح احمر</td>
-              <td>70</td>
 
-            </tr>
-            <tr>
-              <td>تفاح اخضر</td>
-              <td>120</td>
-              <td>تفاح اصفر</td>
-              <td>75</td>
+      <caption>فواكه <a href="index.html" target="_blank">اطلب الأن</a></caption>
+      <thead>
+        <tr>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>يوسفي(بلدي)</td>
+          <td>20</td>
+          <td>يوسفي(كلمنتين)</td>
+          <td>11</td>
 
-            </tr>
-            <tr>
-              <td>رومان</td>
-              <td>24</td>
-              <td>جوافة</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td>موز</td>
-              <td>19</td>
-              <td>فراولة</td>
-              <td>32</td>
-            </tr>
-            <tr>
-              <td>عنب</td>
-              <td>22</td>
-              <td>مانجا</td>
-              <td>48</td>
-            </tr>
-            <tr>
-              <td>قشطة(بلدي)</td>
-              <td>35</td>
-              <td>قشطة(عبدالرازق)</td>
-              <td>60</td>
-            </tr>
-            <tr>
-              <td>برقوق</td>
-              <td>47</td>
-              <td>افوكادو</td>
-              <td>165</td>
-            </tr>
-            <tr>
-              <td>جريب فروت</td>
-              <td>13</td>
-              <td>كيوي(ق)</td>
-              <td>8</td>
-            </tr>
-            <!-- <tr>
+        </tr>
+        <tr>
+          <td>برتقال(بسرة)</td>
+          <td>15</td>
+          <td>برتقال(بلدي)</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>برتقال(سكري)</td>
+          <td>15</td>
+          <td>تفاح احمر</td>
+          <td>70</td>
+
+        </tr>
+        <tr>
+          <td>تفاح اخضر</td>
+          <td>120</td>
+          <td>تفاح اصفر</td>
+          <td>75</td>
+
+        </tr>
+        <tr>
+          <td>رومان</td>
+          <td>24</td>
+          <td>جوافة</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>موز</td>
+          <td>19</td>
+          <td>فراولة</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <td>عنب</td>
+          <td>22</td>
+          <td>مانجا</td>
+          <td>48</td>
+        </tr>
+        <tr>
+          <td>قشطة(بلدي)</td>
+          <td>35</td>
+          <td>قشطة(عبدالرازق)</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>برقوق</td>
+          <td>47</td>
+          <td>افوكادو</td>
+          <td>165</td>
+        </tr>
+        <tr>
+          <td>جريب فروت</td>
+          <td>13</td>
+          <td>كيوي(ق)</td>
+          <td>8</td>
+        </tr>
+        <!-- <tr>
               <td></td>
               <td></td>
               <td></td>
@@ -433,9 +491,16 @@
                 <td></td>
                 <td></td>
               </tr> -->
-        </tbody>
+      </tbody>
     </table>
-              
-</div>
+
+  </div>
+  <footer>
+    <div class="foot">
+    Made by mahmoud hamed<br>
+    Gmail: mahemoudabuelsaoud@gmail.com
+    </div>
+  </footer>
 </body>
+
 </html>
