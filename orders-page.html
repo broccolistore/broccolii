@@ -51,7 +51,51 @@
         
     </div>
 
+<script>
+    // تحديد العنصر `table` في صفحة HTML
+let table = document.querySelector('div > table');
 
+// المراقب يتحقق من أي إضافات جديدة في `tbody`
+let observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    // استخدام `querySelectorAll` للحصول على جميع العناصر التي تم إضافتها في هذا التحديث
+    // العناصر الجديدة يتم وضعها في العنصر `td` في `tbody`
+    // ويتم إنشاء متغير `opcPrint` الذي يقوم بفتح الطابعة OPC وطباعة العنصر الجديد الموجود في `td`
+    let nodes = mutation.addedNodes;
+    let tds = table.querySelectorAll('tbody td:last-of-type');
+    for(var i = 0; i < nodes.length; i++) {
+        let index = i + tds.length - nodes.length;
+        if(nodes[i].nodeName == 'TR') {
+            let td = nodes[i].querySelector('td:last-of-type');
+            let opcPrint = new ActiveXObject("OPC.q200");
+            opcPrint.Print(td.textContent);
+            opcPrint.Close();
+        }
+    }
+  });
+});
+
+// بدء المراقبة لعنصر `tbody`
+let tbody = table.querySelector('tbody');
+observer.observe(tbody, {childList: true});
+
+// تمت إضافة هذا الجزء لإضافة تلقائية للبيانات إلى الجدول.
+// يتم وضع بيانات جديدة في `tbody` من خلال إنشاء `tr` جديد، ثم إنشاء `td` جديد 
+// ووضع المعلومات داخله ثم نضع جميع ذلك في `tbody`.
+function addDataToTable() {
+    let row = document.createElement('tr');
+    let cell1 = document.createElement('td');
+    let cell2 = document.createElement('td');
+    cell1.innerHTML = "البيان الأول";
+    cell2.innerHTML = "البيان الثاني";
+    row.appendChild(cell1);
+    row.appendChild(cell2);
+    tbody.appendChild(row);
+}
+// يمكن استدعاء addDataToTable() لإضافة بيانات جديدة إلى الجدول.
+// سيتم طباعة أي بيانات جديدة تلقائيًا على الطابعة OPC Q200 باستخدام الكود المذكور أعلاه.
+
+</script>
     
 </body>
 
