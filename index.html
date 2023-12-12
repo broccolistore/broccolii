@@ -191,7 +191,7 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: fit-content;
+      height: 8%;
       background-color: black;
       color: white;
       text-align: center;
@@ -200,7 +200,15 @@
       border-top-left-radius: 50px;
     }
 
+
     @media (max-width: 651px) {
+      .main-like::before {
+        bottom: 28%;
+        opacity: 0.5 !important;
+      }
+      .like {
+        bottom: 30%;
+      }
       .foot {
         position: relative;
         margin-top: 10px;
@@ -277,33 +285,49 @@
     .like {
       background-color: transparent;
       outline-style: none;
+      position: fixed;
       border: none;
       z-index: 0;
       z-index: 1111;
+      right: -45px;
 
     }
-    .like h1 {
-      color: white;
-      font-size: 15px;
-      font-weight: bold;
-      position: fixed;
-      bottom: 4%;
-      left: 10px;
-    }
+
     .like button img{
-      width: 50px;
-      position: fixed;
-      bottom: 10%;
+      width: 60px;
+      position: absolute;
+      bottom: 30%;
       z-index: 555;
-      left: 20px;
+      right: 10px;
       cursor: pointer;
+      transform: rotatey(550deg);
+      transform-origin: left;
+    }
+    .like::before {
+      content: "1.850";
+      position: absolute;
+      color: aliceblue;
+      z-index: 5555;
+      font-size: 20px;
     }
     #count-display {
-      position: fixed;
-      bottom: 2%;
-      left: 15px;
+      position: relative;
+      bottom: 1%;
+      right: 15px;
       color: white;
       font-weight: bold;
+    }
+    .main-like {
+      position: relative;
+    }
+    .main-like::before {
+      content: "5000";
+      position: fixed;
+      color: white;
+      font-size: 15px;
+      right: 30px;
+      margin-top: 20px;
+      text-shadow: 10px 10px 10px rgb(255, 0, 0);
     }
 
   </style>
@@ -311,10 +335,12 @@
 </head>
 
 <body>
+  <span class="main-like">
   <span class="like">
     <button id="like-button"><img src="images/like (1).png" alt=""></button>
     <div id="count-display"></div>
   </span>
+</span>
   <div class="main">
     <a href="list.html" target="_blank"><button class="list">انظر قائمة الخضراوات</button></a>
     <button class="addNewOrder mainClassForSetColor sen">
@@ -597,7 +623,7 @@
 
 
 </script>
-<script>
+<!-- <script>
     
   const likeButton = document.getElementById('like-button');
   const countDisplay = document.getElementById('count-display');
@@ -620,5 +646,5 @@
       countDisplay.textContent = `${count} like(s)`;
   });
 
-</script>
+</script> -->
 </html>
