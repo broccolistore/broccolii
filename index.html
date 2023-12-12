@@ -159,6 +159,10 @@
         opacity: 0.2 !important;
         right: 1% !important;
       }
+      .in-logo {
+        width: 100px !important;
+        margin-top: 50px !important;
+      }
     }
 
     @media (max-width: 1600px) {
@@ -301,14 +305,13 @@
       border: none;
       z-index: 0;
       z-index: 1111;
-      right: -45px;
-
+      right: -40px;
     }
 
     .like button img{
       width: 60px;
       position: absolute;
-      bottom: 30%;
+      bottom: -150%;
       z-index: 555;
       right: 10px;
       cursor: pointer;
@@ -332,27 +335,19 @@
     .main-like {
       position: relative;
     }
-    .main-like::before {
-      content: "5000";
-      position: fixed;
-      color: white;
-      font-size: 15px;
-      right: 30px;
-      margin-top: 20px;
-      text-shadow: 10px 10px 10px rgb(255, 0, 0);
-    }
+
 
   </style>
  
 </head>
 
 <body>
-  <span class="main-like">
+
   <span class="like">
     <button id="like-button"><img src="images/like (1).png" alt=""></button>
     <div id="count-display"></div>
   </span>
-</span>
+
   <div class="main">
     <a href="list.html" target="_blank"><button class="list">انظر قائمة الخضراوات</button></a>
     <button class="addNewOrder mainClassForSetColor sen">
