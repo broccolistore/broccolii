@@ -100,20 +100,19 @@
     }
 /* sction desc start  */
     .info {
+      position: relative;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: center;
-      align-items: center;
+      align-content: center;
       background-color: rgba(206, 200, 200, 0.472);
       margin-top: 50px;
       border-radius: 20px;
       box-shadow: 5px 5px 5px inset, 5px 5px 5px;
       padding: 30px;
-      transition: padding .5s;
       margin-top: 30px;
       width: 300px;
-      position: relative;
     }
   
 
@@ -123,11 +122,12 @@
     }
 
     .in-logo {
+      position: absolute;
+      right: 4%;
+      top: 15px;
       width: 70px;
-      border-radius: 50%;
-      margin-top: 30px;
-      top: -5%;
-      right: 30%;
+      border-radius: 20%;
+      grid-area: log;
     }
     .description {
       direction: rtl;
@@ -161,8 +161,8 @@
       }
       .in-logo {
         width: 70px !important;
-        margin-top: 50px !important;
       }
+
     }
 
 
@@ -380,7 +380,7 @@
 
   <div class="info">
     <a href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank"><img class="in-logo"
-        src="images/logo.jpeg" style="" alt=""></a>
+        src="images/logo.jpeg" alt=""></a>
     <h2 class="h-main">Broccoli store</h2>
     <p class="description">
       تقدم شركة "Broccoli" خدمة عالية الجودة للعملاء
