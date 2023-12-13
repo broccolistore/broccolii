@@ -25,7 +25,9 @@
     table {
       border-collapse: collapse;
       /* width: 200%; */
-      background-color: bla;
+      background-image: url(images/logo.jpeg);
+      background-position: 70%;
+      background-size: cover;
 
     }
 
@@ -36,9 +38,6 @@
     }
 
     tr:nth-child(even) {}
-
-    tbody tr {}
-
     th {
       background-color: #000000;
       color: rgb(255, 255, 255);
@@ -48,10 +47,12 @@
     }
 
     td {
-      border: 1px solid rgba(0, 0, 0, 0.298);
+      border: 10px solid rgba(0, 0, 0, 0.298);
       font-size: 30px;
       font-weight: 700;
       text-align: center;
+      color: white;
+      text-shadow: 5px 5px 5px black,-5px -5px 5px black ;
     }
 
     html {
@@ -79,16 +80,7 @@
       font-size: 60px;
       position: relative;
     }
-    caption::before {
-      content: "يرجي العلم ان جميع منتجاتنا مغلفة وجاهزة للأستعمال الفوري .";
-      font-size: 15px;
-      position: absolute;
-      left: 10%;
-      top: 30%;
-      color: rgb(0, 0, 0);
-      background-color: aliceblue;
-      padding: 10px;
-    }
+
 
     caption a {
       color: rgba(255, 0, 0, 0.604);
@@ -146,16 +138,7 @@
         width: 100%;
         height: 100%;
       }
-      caption::before {
-      content: "يرجي العلم ان جميع منتجاتنا مغلفة وجاهزة للأستعمال الفوري .";
-      font-size: 10px;
-      position: absolute;
-      left: 5%;
-      top: 40%;
-      color: rgb(0, 0, 0);
-      background-color: aliceblue;
-      padding: 5px;
-    }
+
     }
     @media (max-width: 800px) {
       .main {
@@ -190,16 +173,7 @@
         width: 100%;
         height: 100%;
       }
-      caption::before {
-      content: "يرجي العلم ان جميع منتجاتنا مغلفة وجاهزة للأستعمال الفوري .";
-      font-size: 5px;
-      position: absolute;
-      left: 5%;
-      top: 40%;
-      color: rgb(0, 0, 0);
-      background-color: aliceblue;
-      padding: 1px;
-    }
+
     }
 
     @media (max-width: 451px) {
@@ -211,64 +185,23 @@
         width: 100%;
         height: 100%;
       }
-      caption::before {
-      content: "يرجي العلم ان جميع منتجاتنا مغلفة وجاهزة للأستعمال الفوري .";
-      font-size: 5px;
-      position: absolute;
-      left: 5%;
-      top: 40%;
-      color: rgb(0, 0, 0);
-      background-color: aliceblue;
-      padding: 1px;
-    }
     }
     @keyframes order-now {
 
       to {
-/*         color: black; */
         font-weight: bold;
         padding: 6px;
       }
     }
 
-    /* section list start */
-    /* body {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #4f4747;
-            direction: rtl;
-        }
-        .weiting {
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 15px;
-            margin: 100px auto;
-            border-radius: 10%;
-            
-        }
-        div h1, p {
-            color: white;
-        }
-        a {
-            font-size: 20px;
-            color: white;
-        }
-        a:hover {
-            color: red;
-        }
-        mark {
-            font-weight: bold;
-            padding: 5px;
-            border-radius: 50%;
-            margin: 5px;
-        } */
-    /* section list end */
+    .last-menu {
+      background-position: bottom center;
+      background-size: 100% 98%;
+      background-repeat: no-repeat;
+    }
+    .first-menu {
+      background-position: center;
+    }
   </style>
 </head>
 
@@ -285,7 +218,7 @@
   <div class="main">
     <!--  section vegetable start  -->
 
-    <table>
+    <table class="first-menu">
       <caption>خضراوات <a href="index.html" target="_blank">اطلب الأن</a></caption>
       <thead>
         <tr>
@@ -299,8 +232,8 @@
         <tr>
           <td>طماطم</td>
           <td>10</td>
-          <td>طماطم شيري </td>
-          <td>160</td>
+          <td>طماطم شيري طبق</td>
+          <td>60</td>
 
         </tr>
         <tr>
@@ -319,9 +252,9 @@
         </tr>
         <tr>
           <td>فلفل الوان</td>
-          <td>55</td>
+          <td>45</td>
           <td>فلفل حار</td>
-          <td>20</td>
+          <td>15</td>
         </tr>
         <tr>
           <td>ليمون</td>
@@ -337,13 +270,13 @@
         </tr>
         <tr>
           <td>كرنب (ق)</td>
-          <td>32</td>
+          <td>25</td>
           <td> كرنب احمر سلطة (ق)</td>
-          <td>19</td>
+          <td>15</td>
         </tr>
         <tr>
           <td>كرنب ابيض سلطة (ق) </td>
-          <td>19</td>
+          <td>15</td>
           <td>قرع عسل</td>
           <td>15</td>
         </tr>
@@ -361,7 +294,7 @@
         </tr>
         <tr>
           <td>جزر</td>
-          <td>17</td>
+          <td>15</td>
           <td>كوسة</td>
           <td>25</td>
         </tr>
@@ -374,8 +307,8 @@
         <tr>
           <td>ذرة حلوة(3ق)</td>
           <td>36</td>
-          <td>ثوم(200جرام)</td>
-          <td>42</td>
+          <td>ثوم شبكة(200جرام)</td>
+          <td>15</td>
         </tr>
         <tr>
           <td>بسلة</td>
@@ -437,6 +370,12 @@
           <td>مشروم(125جرام)</td>
           <td>35</td>
         </tr>
+        <tr>
+          <td>طبق جنزبيل (125جرام)</td>
+          <td>25</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
       </tbody>
     </table>
     <!--  section vegetable end  -->
@@ -472,14 +411,14 @@
         <tr>
           <td>برتقال(سكري)</td>
           <td>12</td>
-          <td>تفاح احمر</td>
+          <td>تفاح احمر(سكري)</td>
           <td>55</td>
 
         </tr>
         <tr>
-          <td>تفاح اخضر</td>
+          <td>تفاح اخضر(Green)</td>
           <td>75</td>
-          <td>تفاح اصفر</td>
+          <td>تفاح اصفر(ايطالي)</td>
           <td>65</td>
 
         </tr>
@@ -519,70 +458,10 @@
           <td>كيوي(ق)</td>
           <td>5</td>
         </tr>
-        <!-- <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr> -->
       </tbody>
     </table>
-    <table>
 
+    <table class="last-menu">
       <caption>خضراوات جاهزة <a href="index.html" target="_blank">اطلب الأن</a></caption>
       <thead>
         <tr>
@@ -614,8 +493,8 @@
         <tr>
           <td>طبق بسلة مفرط جاهز (500جرام)</td>
           <td>30</td>
-          <td>طبق سبانخ مقطع جاهز (500جرام)</td>
-          <td>20</td>
+          <td>فاصولياء مقطعة (500جرام)</td>
+          <td>15</td>
         </tr>
       </tbody>
     </table>
