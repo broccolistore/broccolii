@@ -338,7 +338,9 @@
 
 
   </style>
- 
+
+
+
 </head>
 
 <body>
@@ -349,8 +351,8 @@
   </span>
 
   <div class="main">
-    <a href="list.html" target="_blank"><button class="list">انظر قائمة الخضراوات</button></a>
-    <button class="addNewOrder mainClassForSetColor sen">
+    <a href="list.html" target="_blank"><button  id="like-button" class="list">انظر قائمة الخضراوات</button></a>
+    <button  class="addNewOrder mainClassForSetColor sen">
 
     </button>
     <a href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank"><img src="images/facebook.png"
@@ -406,6 +408,19 @@
     Gmail: mahemoudabuelsaoud@gmail.com
   </footer>
 </body>
+<!-- sound button start -->
+<script>
+  var audio = new Audio('sound/sound.mp3');
+  var likeBtn = document.getElementById('like-button');
+
+  likeBtn.addEventListener('click', playSound);
+
+  function playSound() {
+      audio.play();
+  }
+</script>
+<!-- sound button end -->
+
 <!-- section masenger start -->
 <script>
   var chatbox = document.getElementById('fb-customer-chat');
