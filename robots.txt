@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /list.html
+Disallow: /index.html
+
+Sitemap: https://broccolistore.github.io/sitemap.xml
