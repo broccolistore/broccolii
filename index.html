@@ -183,6 +183,9 @@
       border-top-right-radius: 50px;
       border-top-left-radius: 50px;
     }
+    @media (max-width: 1300px) {
+
+    }
     @media (max-width: 1024px) {
       .foot {
     position: absolute;
@@ -250,7 +253,7 @@
       }
 
     }
-        @media (max-width:651px) {
+    @media (max-width:651px) {
       body {
         flex-direction: column;
        background-image: url(images/logo-smal2.jpeg);
@@ -386,6 +389,14 @@
       border-radius: 20px !important;
       opacity: 0.5;
     }
+    .whatsapp {
+      position: fixed;
+      bottom: 5%;
+      right: -15px;
+      z-index: 222;
+      border-bottom: none !important;
+      padding: 0 !important;
+    }
   </style>
 
 </head>
@@ -411,8 +422,8 @@
     <button  class="addNewOrder mainClassForSetColor sen"></button>
     <a href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank"><img src="images/facebook.png"
         alt=""></a>
-    <a href="https://wa.me/201005165512" target="_blank"><img src="images/whatsapp.png" alt=""></a>
-    <a href="https://instagram.com/broccolystorebrand?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><img
+    <a class="whatsapp" href="https://wa.me/201005165512" target="_blank"><img src="images/whatsapp.png" alt=""></a>
+    <a href="https://www.instagram.com/broccoliistore/" target="_blank"><img
         src="images/instagram.png" alt=""></a>
   </div>
 
@@ -446,16 +457,7 @@
 
     </p>
   </div>
-  <!-- section masenger start -->
-  <!-- Messenger المكون الإضافي "دردشة" Code -->
-  <span id="fb-root"></span>
 
-  <!-- Your المكون الإضافي "دردشة" code -->
-  <span id="fb-customer-chat" class="fb-customerchat">
-  </span>
-
-
-  <!-- section masenger end   -->
   <footer class="foot">
     Made by Mahemoud hamed © 2023<br>
     Gmail: mahemoudabuelsaoud@gmail.com
@@ -474,31 +476,7 @@
 </script>
 <!-- sound button end -->
 
-<!-- section masenger start -->
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "1839654556272371");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
 
-<!-- Your SDK code -->
-<script>
-  window.fbAsyncInit = function () {
-    FB.init({
-      xfbml: true,
-      version: 'v18.0'
-    });
-  };
-
-  (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- section masenger end   -->
 <script src="./cdn/swalCdn.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
