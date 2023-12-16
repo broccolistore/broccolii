@@ -11,8 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
   <link rel="canonical" href="https://broccolistore.github.io/broccolii" />
-   <link rel="canonical" href="https://broccolistore.github.io/broccolii/index.html" />
-   <link rel="canonical" href="https://broccolistore.github.io/broccolii/list.html" />
   <meta name="google-site-verification" content="rmYhH5U7s21lZanHo0N3yd6rMCtttBKhNfDW6XlJl9k" />
   <title>broccoli  - اشتري الخضراوات والفواكه المغلفة| توصيل سريع إلى باب منزلك</title>
   <meta name="keywords"
@@ -22,25 +20,19 @@
     content="موقعنا هو المكان المثالي لتلبية احتياجكم للخضروات والفواكه الطازجة والمغلفة بعناية، وذلك لتسهيل حياتكم اليومية وتوفير الوقت والجهد في البحث والتسوق. نحن نقدم خدمة توصيل سريعة ومريحة إلى باب منزلكم، مع وجود خيارات مختلفة للحجم والنوعية مناسبة لاحتياجاتكم. تسوقوا على موقعنا الآن واحصلوا على خضروات وفواكه طازجة وصحية، جاهزة للاستعمال الفوري في وصفاتكم المفضلة. يمكنكم الاعتماد على جودة منتجاتنا وسرعة ودقة التوصيل.">
 </head>
 <body>
-<!-- <div>Time Counter: <span id="timeCounter">0</span></div> -->
   <!--sound info how to use start-->
   <span class="main-audio">
     <audio src="sound/info-sound.mp3" controls autoplay></audio>
-    
   </span>
-  <!--sound info how to use start-->
+  <!--sound info how to use end-->
   <!-- click like start -->
   <span class="like">
     <button id="like-button"><img src="images/like (1).png" alt=""></button>
     <div id="count-display"></div>
   </span>
   <!-- click like end -->
-  <!--  -->
+  <!-- Main section start  -->
   <div class="main">
-<!--     <div class="countdown">
-      <div>عدد العملاء :<span id="countdown"></span></div>
-      
-  </div> -->
     <a href="list.html" target="_blank" class="looklist"><button id="like-button" class="list">انظر قائمة
         الخضراوات</button></a>
     <button class="addNewOrder mainClassForSetColor sen"></button>
@@ -77,52 +69,17 @@
       <mark> يرجي طلب الاوردر قبل ميعاد الاستلام بيوم حيث ان الخضراوات والفاكهة طازجة يوميا</mark>.
     </p>
   </div>
+  <!-- Main section end  -->
+<!-- Footer section start -->
   <footer class="foot">
     Made by Mahemoud hamed © 2023<br>
     Gmail: mahemoudabuelsaoud@gmail.com<br>
     Website Developer Phone Number: 01030403068
   </footer>
+<!-- Footer section start -->
+
 </body>
-<!-- عدد الزوار بداية  -->
-<!-- <script>
-  function initCountdown(count, maxCount, countdown) {
-      var interval = setInterval(function() {
-          if (count < maxCount) {
-              count++;
-              var digits = String(count).split('');
-              countdown.innerHTML = '';
-              for (var i = 0; i < digits.length; i++) {
-                  countdown.innerHTML += '<span class="digit">' + digits[i] + '</span>';
-              }
-          }
-          else {
-              clearInterval(interval);
-              if (maxCount === maxCount1) {
-                  initCountdown(0, maxCount2, countdown);
-              }
-              else if (maxCount === maxCount2) {
-                  initCountdown(1498, maxCount3, countdown);
-              }
-              else {
-                  countdown.innerHTML = '<span>1498 </span>';
-              }
-          }
-      }, 1);
-  }
-  var maxCount1 = 1250;
-  var maxCount2 = 1500;
-  var maxCount3 = 1511;
-  var count = 0;
-  if (localStorage.getItem("count")) {
-      count = parseInt(localStorage.getItem("count"));
-  }
-  var countdown = document.getElementById("countdown");
-  initCountdown(count, maxCount1, countdown);
-  window.addEventListener("unload", function() {
-      localStorage.setItem("count", count);
-  });
-</script> -->
-<!-- عدد الزوار نهاية  -->
+<!-- sound button start -->
 <script>
   var audio = new Audio('sound/sound.mp3');
   var likeBtn = document.getElementById('like-button');
@@ -268,22 +225,4 @@
   }
   /* 1 end function to get data now */
 </script>
-<!-- <script>
-    
-  const likeButton = document.getElementById('like-button');
-  const countDisplay = document.getElementById('count-display');
-  // check if count is saved in local storage
-  let count = localStorage.getItem('likeCount') || 0;
-  // display current count
-  countDisplay.textContent = `${count} like(s)`;
-  // add event listener to like-button
-  likeButton.addEventListener('click', () => {
-      // increment count
-      count++;
-      // save new count to local storage
-      localStorage.setItem('likeCount', count);
-      // update count display
-      countDisplay.textContent = `${count} like(s)`;
-  });
-</script> -->
 </html>
