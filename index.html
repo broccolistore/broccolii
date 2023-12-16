@@ -77,16 +77,16 @@
 <!-- Footer section start -->
 
 </body>
-<!-- sound button start -->
 <script>
+  /* sound button start */
   var audio = new Audio('sound/sound.mp3');
   var likeBtn = document.getElementById('like-button');
   likeBtn.addEventListener('click', playSound);
   function playSound() {
     audio.play();
   }
+  /* sound button end  */
 </script>
-<!-- sound button end -->
 <script src="./cdn/swalCdn.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
