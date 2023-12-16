@@ -1,371 +1,163 @@
 body {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  /* display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #c3d1d1; */
+}
+table {
+  border-collapse: collapse;
+  /* width: 200%; */
   background-image: url(../images/logo.jpeg);
-  background-position: 70% 50%;
+  background-position: 70%;
+  background-size: cover;
+}
+th,
+td {
+  text-align: left;
+  padding: 5px;
+}
+tr:nth-child(even) {}
+th {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: 5px solid rgba(250, 250, 250, 0.21);
+  font-weight: bold;
+  font-size: 40px;
+}
+td {
+  border: 10px solid rgba(0, 0, 0, 0.298);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
   color: white;
+  text-shadow: 5px 5px 5px black,-5px -5px 5px black ;
+}
+html {
+  direction: rtl;
+}
+thead tr th {
+  text-align: center;
+}
+.logo {
+  position: absolute;
+  left: 150px;
+  top: 25%;
+  z-index: 2;
+  width: 380px;
+  border-radius: 30%;
+}
+caption {
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  border-top: 2px solid;
+  font-weight: bold;
+  font-size: 60px;
+  position: relative;
+}
+caption a {
+  color: rgba(2, 0, 0, 0.604);
+  font-size: 25px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+  
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.2s ease;
+  animation-name: order-now;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+caption a:hover {
+  transform: scale(1.03);
+  /* تغيير الحجم الحافة والعرض*/
+  color: red;
+  opacity: .8;
 }
 .main {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(206, 200, 200, 0.241);
-  margin-top: 50px;
-  border-radius: 20px;
-  /* box-shadow: 5px 5px 5px inset, 5px 5px 5px; */
-  box-shadow: 2px 5px 1px inset, 2px 5px 1px;
-  color: black;
-  padding: 30px;
-  transition: padding .5s;
-  margin-top: 30px;
-  width: 300px;
-  height: 583px;
 }
-.list {
-  min-width: 180px;
-  font-size: 12px;
-  font-family: cairo;
-  cursor: pointer;
-  width: 100px;
-  height: 50px;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  background: #0a1951;
-  box-shadow: 5px 5px 5px inset black;
-  color: white;
-  font-weight: 900;
-  border: none;
-}
-.list:hover {
-  width: 80px;
-  font-size: 8px;
-}
-.sen {
-  min-width: 180px;
-  font-size: 20px;
-  font-family: cairo;
-  cursor: pointer;
-  width: 200px;
-  height: 100px;
-  border-radius: 10px;
-  background: #0a1951;
-  box-shadow: 5px 5px 5px inset black;
-  color: white;
-  font-weight: 900;
-  border: none;
-}
-.sen:hover {
-  opacity: 0.8;
-  font-size: 12px;
-}
-.main img {
-  width: 80px;
-  margin: 35px;
-  border-radius: 20%;
-}
-img:hover {
-  opacity: 0.8;
-  padding: 10px;
-}
-.main a {
-  border-bottom: 1px solid black;
-}
-.looklist {
-  border: none !important;
-}
-.info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  background-color: rgba(206, 200, 200, 0.683);
-  margin-top: 50px;
-  border-radius: 20px;
-  box-shadow: 2px 5px 1px inset, 2px 5px 1px;
-  padding: 30px;
-  margin-top: 30px;
-  width: 300px;
-  color: black;
-}
-.info img:hover {
-  padding: 0 !important;
-  opacity: 1;
-}
-.in-logo {
-  position: absolute;
-  right: 4%;
-  top: 15px;
-  width: 55px;
-  border-radius: 20%;
-  grid-area: log;
-}
-.description {
-  direction: rtl;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.6;
-}
-.h-main {
-  color: rgb(12, 1, 1);
-  border-bottom: 3px solid black;
-  font-size: 20px !important;
-  margin-top: 43px !important;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-  height: 583px;
-  padding: 10px;
-}
-.description {
-  font-size: 15px;
-  padding: 0px 0px 30px 0px;
-}
-.in-logo:hover {
-  opacity: 0.6 !important;
-}
-* {
-  box-sizing: border-box;
+footer {
 }
 .foot {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 8%;
-  background-color: black;
-  color: white;
   text-align: center;
-  padding: 20px;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
+  background-color: #000000;
+  color: white;
+  
 }
-
-@media (max-width: 1750px) {
-  .foot {
-    height: 10% !important;
-    padding: 10px !important;
-  }
-}
-
-@media (max-width: 1024px) {
-  .foot {
-    position: absolute;
-    bottom: -111px !important;
+@media (max-width: 1050px) {
+  .main {
+    flex-direction: column;
     width: 100%;
-    height: 15%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+  }
+  table {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 800px) {
-  .foot {
-    position: absolute;
-    bottom: -109px;
+  .main {
+    flex-direction: column;
     width: 100%;
-    height: 10%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
   }
+  table {
+    width: 100%;
+    height: 100%;
+  }
+  caption::before {
+  content: "يرجي العلم ان جميع منتجاتنا مغلفة وجاهزة للأستعمال الفوري .";
+  font-size: 8px;
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+  padding: 5px;
+}
 }
 @media (max-width: 651px) {
-  .main-like::before {
-    bottom: 28%;
-    opacity: 0.5 !important;
-  }
-  .like {
-    bottom: 30%;
-  }
-  .foot {
-    line-height: 1.8;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    position: relative;
-    margin-top: 10px;
-    font-size: 10px;
-    padding: 26;
-    height: 160px !important;
-  }
-  .foot .phone {
-    font-size: 8px;
-    right: 20px;
-    margin-bottom: 15px;
-  }
-  .foot .gmail {
-    font-size: 8px;
-    margin-bottom: 15px;
-    left: 0;
-  }
-  .info {
-    height: fit-content !important;
-  }
-  .description {
-    font-size: 14px !important;
-    line-height: 1.2 important;
-  }
-}
-@media (max-width:651px) {
-  body {
+  .main {
     flex-direction: column;
-    background-image: url(../images/logo-smal2.jpeg);
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat !important;
-    background-position: center top;
+    width: 100%;
   }
-  img {
-    width: 40px !important;
-  }
-  .sen {
-    width: 100px;
-    height: 50px;
-  }
-  .main-like::before {
-    bottom: 28%;
-    opacity: 0.2 !important;
-    right: 1% !important;
-  }
-  .in-logo {
-    width: 50px !important;
+  table {
+    width: 100%;
+    height: 100%;
   }
 }
-.sen {
-  border: 1px solid #ccc;
-  padding: 10px 20px;
-  font-size: 18px;
-  position: relative;
-  overflow: hidden;
-  background-color: #eee;
-}
-.addNewOrder::before {
-  content: 'اطلب الأن';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: anim 3s ease forwards;
-  animation-iteration-count: infinite;
-}
-@keyframes anim {
-  0% {
-    transform: scale(1);
+@media (max-width: 451px) {
+  .main {
+    flex-direction: column;
   }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
+  table {
+    width: 100%;
+    height: 100%;
   }
 }
-.swal2-confirm {
-  position: relative !important;
-  top: -40px !important;
+@keyframes order-now {
+  to {
+    font-weight: bold;
+    padding: 6px;
+  }
 }
-path {
-  bottom: 0;
+.last-menu {
+  background-position: bottom center;
+  background-size: 100% 98%;
+  background-repeat: no-repeat;
 }
-.like {
-  background-color: transparent;
-  outline-style: none;
-  position: fixed;
-  border: none;
-  z-index: 0;
-  z-index: 1111;
-  right: -40px;
+.first-menu {
+  background-position: center;
 }
-.like button img {
-  width: 60px;
-  position: absolute;
-  bottom: -150%;
-  z-index: 555;
-  right: 10px;
-  cursor: pointer;
-  transform: rotatey(550deg);
-  transform-origin: left;
-}
-.like::before {
-  content: "1.850";
-  position: absolute;
-  color: aliceblue;
-  z-index: 5555;
-  font-size: 20px;
-}
-#count-display {
-  position: relative;
-  bottom: 1%;
-  right: 15px;
-  color: white;
-  font-weight: bold;
-}
-.main-like {
-  position: relative;
-}
-.main-audio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.info-order {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: 10px;
-  text-shadow: 5px 5px 5px rgb(255, 255, 255);
-  position: absolute;
-  top: 20px;
-  opacity: 0.2;
-}
-audio {
-  width: 180px;
-  height: 20px;
-  position: absolute;
-  top: 70px;
-  background: #5d1d1d;
-  outline-style: none;
-  border-radius: 20px !important;
-  opacity: 0.5;
-}
-.whatsapp {
-  position: fixed;
-  bottom: 5%;
-  right: -20px;
-  z-index: 222;
-  border-bottom: none !important;
-  padding: 0 !important;
-}
-.countdown {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 20px;
-  text-shadow: 5px 5px 5px black;
-  background-color: transparent;
-  box-shadow: 5px 5px 5px black;
-  border-radius: 20px;
-  padding: 10px;
-  width: fit-content;
-}
-.countdown span {
-  color: rgb(0, 0, 0);
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.268);
-  font-size: 30px;
+.next-menu {
+  background-position: center;
+  
 }
