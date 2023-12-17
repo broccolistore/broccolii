@@ -295,6 +295,7 @@ path {
   z-index: 0;
   z-index: 1111;
   right: -40px;
+  bottom: 10px;
 }
 .like  img {
   width: 60px;
