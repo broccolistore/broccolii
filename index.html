@@ -25,14 +25,11 @@
     <audio src="sound/info-sound.mp3" controls autoplay></audio>
   </span>
   <!--sound info how to use end-->
-  <!-- section masenger start -->
-
-  <!-- Messenger المكون الإضافي "دردشة" Code -->
-  <span id="fb-root"></span>
-  <!-- Your المكون الإضافي "دردشة" code -->
-  <span id="fb-customer-chat" class="fb-customerchat">
+  <!-- click like start -->
+  <span class="like">
+    <a href="#"><img src="images/like-icone.png" alt="your brwser is not support this type image"></a>
   </span>
-<!-- section masenger end   -->
+  <!-- click like end -->
   <!-- Main section start  -->
   <div class="main">
     <a href="list.html" target="_blank" class="looklist" alt="look list vegetables" title="انتقل الي قائمة الأصناف">انظر قائمة الخضراوات</a>
@@ -80,31 +77,6 @@
   </footer>
 <!-- Footer section end -->
 </body>
-<!-- section masenger start -->
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "1839654556272371");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v18.0'
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- section masenger end   -->
 <script src="./cdn/swalCdn.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
