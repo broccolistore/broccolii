@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta name="keywords" content="خضار,خضراوات,فاكه,تجهزخضار,خضراوات جاهزة,فاكه مغلفة,توصيل,خدمة توصيل,بروكلي,بروكلي ستور ,broccoli,broccoli store,brokly,توصيل خضار,fv,;gd,vegtables,fruts,سوق,سوق العبو,تغليف الخضراوات ,قائمة الخضراوات , اسعار , price list">
   <meta name="author" content="Mahmoud hamed">
@@ -7,7 +7,6 @@
 <meta name="google-site-verification" content="rmYhH5U7s21lZanHo0N3yd6rMCtttBKhNfDW6XlJl9k" />
     <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
       <link rel="canonical" href="https://broccolistore.github.io/broccolii/index.html" />
-      <link rel="stylesheet" href="css/list_style.css">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2SXMT0XL1"></script>
 <script>
@@ -17,135 +16,458 @@
   gtag('config', 'G-K2SXMT0XL1');
 </script>
    <title>broccoli  - اشتري الخضراوات والفواكه المغلفة| توصيل سريع إلى باب منزلك</title>
-   <style>
-    /* a {
-  color: rgba(2, 0, 0, 0.604);
-  font-size: 25px;
-  background-color: white;
-  padding: 10px;
-  text-decoration: none;
-  z-index: 555;
-  border-radius: 50%;
-  display: inline-block;
-  transition: all 0.2s ease;
-  animation-name: order-now;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  animation-delay: 1s;
-  animation-fill-mode: backwards;
-  animation-direction: alternate;
-  position: absolute;
-  right: 30%;
-  top: 25px;
-}
-@keyframes order-now {
-  to {
-    font-weight: bold;
-    padding: 6px;
-  }
-} */
-
-
-
-.sen {
-    min-width: 180px;
-    font-size: 20px;
-    font-family: cairo;
-    cursor: pointer;
-    width: 120px;
-    height: 70px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px  rgb(255, 255, 255), -2px -2px 3px  rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    border: 1px solid #aff185;
-    padding: 10px 20px;
-    font-size: 25px;
-    position: fixed;
-    right: 10%;
-    bottom: 10%;
-    z-index: 555;
-    overflow: hidden;
-    background-color: black;
-}
-.addNewOrder::before {
-  content: 'اطلب الأن';
-  /* position: absolute; */
-  /* top: 0;
-  left: 0; */
-  /* width: 100%;
-  height: 100%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: move 3s ease forwards;
-  animation-iteration-count: infinite;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.foot {
-    background-color: black;
-    color: white;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    /* direction: ltr; */
-    padding: 20px;
-    position: relative;
-}
-@media (max-width: 651px) {
+  <style>
+    body {
+      /* display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: #c3d1d1; */
+    }
+    table {
+      border-collapse: collapse;
+      /* width: 200%; */
+      background-image: url(images/logo.jpeg);
+      background-position: 70%;
+      background-size: cover;
+    }
+    th,
+    td {
+      text-align: left;
+      padding: 5px;
+    }
+    tr:nth-child(even) {}
+    th {
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      border: 5px solid rgba(250, 250, 250, 0.21);
+      font-weight: bold;
+      font-size: 40px;
+    }
+    td {
+      border: 10px solid rgba(0, 0, 0, 0.298);
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      color: white;
+      text-shadow: 5px 5px 5px black,-5px -5px 5px black ;
+    }
+    html {
+      direction: rtl;
+    }
+    thead tr th {
+      text-align: center;
+    }
+    .logo {
+      position: absolute;
+      left: 150px;
+      top: 25%;
+      z-index: 2;
+      width: 380px;
+      border-radius: 30%;
+    }
+    caption {
+      color: rgb(255, 255, 255);
+      background-color: #000000;
+      border-top: 2px solid;
+      font-weight: bold;
+      font-size: 60px;
+      position: relative;
+    }
+    caption a {
+      color: rgba(2, 0, 0, 0.604);
+      font-size: 25px;
+      background-color: white;
+      padding: 10px;
+      text-decoration: none;
+      
+      border-radius: 50%;
+      display: inline-block;
+      transition: all 0.2s ease;
+      animation-name: order-now;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      animation-delay: 1s;
+      animation-fill-mode: backwards;
+      animation-direction: alternate;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+    caption a:hover {
+      transform: scale(1.03);
+      /* تغيير الحجم الحافة والعرض*/
+      color: red;
+      opacity: .8;
+    }
+    .main {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
+    footer {
+    }
     .foot {
-        font-size: 12px;
-
+      text-align: center;
+      background-color: #000000;
+      color: white;
+      
     }
-    h6 {
-        right: 0;
- }
-    /* h5 {
-        left: 40%;
-    }  */
-    h4 {
-        left: 0;
+    @media (max-width: 1050px) {
+      .main {
+        flex-direction: column;
+        width: 100%;
+      }
+      table {
+        width: 100%;
+        height: 100%;
+      }
     }
-}
-h4 {
-    position: absolute;
-    left: 20%;
-
-}
-/* h5 {
-    position: absolute;
-    left: 40%;
-} */
-h6 {
-    position: absolute;
-    left: 60%;
-}
-@keyframes move {
-    to {
-        transform: scale(1.4);
+    @media (max-width: 800px) {
+      .main {
+        flex-direction: column;
+        width: 100%;
+      }
+      table {
+        width: 100%;
+        height: 100%;
+      }
+      caption::before {
+      content: "يرجي العلم ان جميع منتجاتنا مغلفة وجاهزة للأستعمال الفوري .";
+      font-size: 8px;
+      position: absolute;
+      left: 5%;
+      top: 40%;
+      color: rgb(0, 0, 0);
+      background-color: aliceblue;
+      padding: 5px;
     }
-}
-   </style>
+    }
+    @media (max-width: 651px) {
+      .main {
+        flex-direction: column;
+        width: 100%;
+      }
+      table {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media (max-width: 451px) {
+      .main {
+        flex-direction: column;
+      }
+      table {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @keyframes order-now {
+      to {
+        font-weight: bold;
+        padding: 6px;
+      }
+    }
+    .last-menu {
+      background-position: bottom center;
+      background-size: 100% 98%;
+      background-repeat: no-repeat;
+    }
+    .first-menu {
+      background-position: center;
+    }
+    .next-menu {
+      background-position: center;
+      
+    }
+  </style>
 </head>
-<body style="background-color: #1d366f;">
-<a href="index.html" target="_blank">  <button class="addNewOrder mainClassForSetColor sen" alt="send order" title="تسجيل البيانات والطلبات"></button></a>
-<div style="position: relative; width: 100%; height: 0; padding-top: 491.8033%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF3HZWvk3o&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<!-- <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF3HZWvk3o&#x2F;view?utm_content=DAF3HZWvk3o&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">menu broccoli (590 x 2000 بيكسل)</a>  -->
-  <!-- Footer section start -->
-  <footer style="border-left-top-radius: 30px; border-right-top-radius: 30px;">
-    <div class="foot" >
-    <h4>Made by mahmoud hamed</h4>
-   <!-- <h5> Gmail: mahemoudabuelsaoud@gmail.com</h5> -->
-   <h6> Website Developer Phone Number: 01030403068</h6>
+<body>
+  <!-- section list start -->
+  <!-- <div class="weiting">
+    <h1> سوف يتم ظهور قائمة الخضراوات والفاكهة إبتداء<br> من يوم الاثنين الموافق 12/11 القادم .</h1>
+    <p>يرجي العلم ان قائمة المنتجات يتم تحديثها كل ثلاثة ايام نظرا الي سعر السوق. </p>
+    <a href="index.html">يمكنك الرجوع من  <mark>هنا</mark>وطلب المنتج الذي تريدة من خلال تسجيل البيانات وسيتم التواصل معك في  خلال  60 دقيقة . </a>
+    </div> -->
+  <!-- section list end -->
+  <div class="main">
+    <!--  section vegetable start  -->
+    <table class="first-menu">
+      <caption>خضراوات <a href="index.html" target="_blank">اطلب الأن</a></caption>
+      <thead>
+        <tr>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>طماطم</td>
+          <td>10</td>
+          <td>طماطم شيري طبق</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>باذنجان مخدد</td>
+          <td>11</td>
+          <td>باذنجان عروس</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>باذنجان رومي</td>
+          <td>8</td>
+          <td>فلفل رومي</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>فلفل الوان</td>
+          <td>45</td>
+          <td>فلفل حار</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>ليمون</td>
+          <td>20</td>
+          <td>ليمون اضاليا</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>قرنبيط (ق)</td>
+          <td>19</td>
+          <td>بروكلي</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>كرنب (ق)</td>
+          <td>25</td>
+          <td> كرنب احمر سلطة (ق)</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>كرنب ابيض سلطة (ق) </td>
+          <td>15</td>
+          <td>قرع عسل</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>خيار</td>
+          <td>17</td>
+          <td>بطاطس</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>بصل احمر</td>
+          <td>50</td>
+          <td>بصل ابيض</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>جزر</td>
+          <td>17</td>
+          <td>كوسة</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>بطاطا</td>
+          <td>15</td>
+          <td>قلقاس</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>ذرة حلوة(3ق)</td>
+          <td>36</td>
+          <td>ثوم شبكة(200جرام)</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>بسلة</td>
+          <td>32</td>
+          <td>فاصولياء</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>بنجر</td>
+          <td>15</td>
+          <td>لفت</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>فجل احمر</td>
+          <td>8</td>
+          <td>كابوتشة(ق)</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>خس(ق)</td>
+          <td>6</td>
+          <td>ملوخية</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>سبانخ</td>
+          <td>20</td>
+          <td>سلق</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>كرات(ق)</td>
+          <td>9</td>
+          <td>كرفس(ق)</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>(125جرام)زعتر</td>
+          <td>11</td>
+          <td>(125جرام)روزماري</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>خضرة مشكلة</td>
+          <td>6</td>
+          <td>جرجير</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td>بقدونس</td>
+          <td>2.5</td>
+          <td>كزبرة</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td>شبت</td>
+          <td>2.5</td>
+          <td>مشروم(125جرام)</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>طبق جنزبيل (125جرام)</td>
+          <td>25</td>
+          <td>.</td>
+          <td>.</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--  section vegetable end  -->
+    <!--  section frutes start  -->
+    <table class="next-menu">
+      <caption>فواكه <a href="index.html" target="_blank">اطلب الأن</a></caption>
+      <thead>
+        <tr>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>يوسفي(بلدي)</td>
+          <td>15</td>
+          <td>يوسفي(كلمنتين)</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>برتقال(بسرة)</td>
+          <td>14</td>
+          <td>برتقال(بلدي)</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>برتقال(سكري)</td>
+          <td>15</td>
+          <td>تفاح احمر(سكري)</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>تفاح اخضر(Green)</td>
+          <td>75</td>
+          <td>تفاح اصفر(ايطالي)</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>رومان</td>
+          <td>35</td>
+          <td>جوافة</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>موز</td>
+          <td>15</td>
+          <td>فراولة</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>عنب</td>
+          <td>22</td>
+          <td>مانجا</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>قشطة(بلدي)</td>
+          <td>35</td>
+          <td>قشطة(عبدالرازق)</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>برقوق</td>
+          <td>55</td>
+          <td>افوكادو</td>
+          <td>140</td>
+        </tr>
+        <tr>
+          <td>جريب فروت</td>
+          <td>13</td>
+          <td>كيوي(ق)</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="last-menu">
+      <caption>خضراوات جاهزة <a href="index.html" target="_blank">اطلب الأن</a></caption>
+      <thead>
+        <tr>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+          <th>الصنف</th>
+          <th>سعر الكيلو</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>طبق قرع عسل مقطع جاهز (1كيلو)</td>
+          <td>25</td>
+          <td>طبق نص كيلو ملوخية مقطف </td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <td>قلقاس مقطع جاهز (1كيلو)</td>
+          <td>40</td>
+          <td>(125جرام)  ثوم  مفرط</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>طبق رمان مفرط جاهز (250جرام)</td>
+          <td>25</td>
+          <td>طبق سبانخ مقطع جاهز (500جرام)</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>طبق بسلة مفرط جاهز (500جرام)</td>
+          <td>30</td>
+          <td>فاصولياء مقطعة (500جرام)</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer>
+    <div class="foot">
+    Made by mahmoud hamed<br>
+    Gmail: mahemoudabuelsaoud@gmail.com<br>
+    Website Developer Phone Number: 01030403068
     </div>
   </footer>
-  <!-- Footer section end -->
 </body>
 </html>
