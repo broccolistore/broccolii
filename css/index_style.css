@@ -397,6 +397,9 @@ footer ul {
         width: 40px !important;
         margin: 10px;
     }
+    .content-4 h2 {
+        font-size: 15px;
+    }
 }
 
 
@@ -406,6 +409,9 @@ footer ul {
     .content-3,
     .content-4 {
         flex-direction: column;
+    }
+    .content-4 h2 {
+        font-size: 12px;
     }
     .card {
         font-size: 12px;
@@ -454,6 +460,9 @@ footer ul {
         /* transform: scale(3) !important; */
         width: 60%;
         animation-play-state: paused;
+    }
+        .content-4 h2 {
+        font-size: 10px;
     }
     .card {
         font-size: 10px;
