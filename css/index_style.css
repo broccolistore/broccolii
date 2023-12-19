@@ -42,7 +42,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -50,7 +50,7 @@ nav a {
     color: white;
     font-family: 'Cairo', sans-serif;
     border-bottom: 3px solid #0a1951;
-    padding: 18px;
+    /* padding: 18px; */
 
 }
 nav a:hover {
