@@ -13,7 +13,7 @@
   <link rel="icon" type="image/x-icon" href="images/logo.jpeg">
   <link rel="canonical" href="https://broccolistore.github.io/broccolii">
   <meta name="google-site-verification" content="rmYhH5U7s21lZanHo0N3yd6rMCtttBKhNfDW6XlJl9k">
-  <title>broccoli  - اشتري الخضراوات والفواكه المغلفة| توصيل سريع إلى باب منزلك</title>
+  <title>broccoli - اشتري الخضراوات والفواكه المغلفة| توصيل سريع إلى باب منزلك</title>
   <meta name="keywords"
     content="خضار,خضراوات,فاكه,تجهزخضار,خضراوات جاهزة,فاكه مغلفة,توصيل,خدمة توصيل,بروكلي,بروكلي ستور ,broccoli,broccoli store,brokly,توصيل خضار,fv,;gd,vegtables,fruts,سوق,سوق العبو,تغليف الخضراوات">
   <meta name="author" content="Mahmoud hamed">
@@ -44,10 +44,21 @@
       </article>
 
       <article class="btn-1">
+
+        <!-- section masenger start -->
+        <!-- Messenger المكون الإضافي "دردشة" Code -->
+        <span id="fb-root"></span>
+
+        <!-- Your المكون الإضافي "دردشة" code -->
+        <span id="fb-customer-chat" class="fb-customerchat">
+        </span>
+        <!-- section masenger end   -->
+        
         <button title="سجل بياناتك" class="addNewOrder mainClassForSetColor btn">
           طلب
         </button>
-        <a title="انتقل الي قسم الخضراوات" href="list.html" target="_blank" class="looklist" alt="look list vegetables" title="انتقل الي قائمة الأصناف">
+        <a title="انتقل الي قسم الخضراوات" href="list.html" target="_blank" class="looklist" alt="look list vegetables"
+          title="انتقل الي قائمة الأصناف">
           الخضراوات</a>
       </article>
 
@@ -94,12 +105,12 @@
     </article>
     <article id="cont3" class="content-3">
       <article>
-      <h2 class="h-cont3">تواصل معنا عبر:</h2>
+        <h2 class="h-cont3">تواصل معنا عبر:</h2>
 
 
-      <h3>phone: +201005165512</h3>
-      <h3>Gmail: broccolistorebrand@gmail.com</h3>
-    </article>
+        <h3>phone: +201005165512</h3>
+        <h3>Gmail: broccolistorebrand@gmail.com</h3>
+      </article>
       <article class="all-icones">
         <a class="icones" href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank" alt="facebook"
           title="انتقل الي فيس بوك"><img class="face" src="images/facebook.png"
@@ -129,7 +140,31 @@
   <!-- Footer section end -->
 
 </body>
+<script>
+     // section masenger start
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "1839654556272371");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v18.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      // section masenger end 
+    </script>
 <script src="./cdn/swalCdn.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
