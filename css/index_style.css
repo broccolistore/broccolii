@@ -103,9 +103,9 @@ section {
     /* border-radius: 20px ; */
 }
 .dir {
-    bottom: 0;
+    bottom: 20px;
     z-index: 555;
-    right: 10px;
+    left: 10px;
 }
 .dir2 {
     bottom: 10px;
