@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/master.css">
@@ -19,109 +20,185 @@
   <meta name="description"
     content="موقعنا هو المكان المثالي لتلبية احتياجكم للخضروات والفواكه الطازجة والمغلفة بعناية، وذلك لتسهيل حياتكم اليومية وتوفير الوقت والجهد في البحث والتسوق. نحن نقدم خدمة توصيل سريعة ومريحة إلى باب منزلكم، مع وجود خيارات مختلفة للحجم والنوعية مناسبة لاحتياجاتكم. تسوقوا على موقعنا الآن واحصلوا على خضروات وفواكه طازجة وصحية، جاهزة للاستعمال الفوري في وصفاتكم المفضلة. يمكنكم الاعتماد على جودة منتجاتنا وسرعة ودقة التوصيل.">
 </head>
-<body>
-  <!--sound info how to use start-->
-  <span class="main-audio">
-    <audio src="sound/info-sound.mp3" controls autoplay></audio>
-  </span>
-  <!--sound info how to use end-->
-  <!-- click like start -->
-  <span class="like">
-    <a href="#"><img src="images/like-icone.png" alt="your brwser is not support this type image"></a>
-  </span>
-  <!-- click like end -->
-  <!-- Main section start  -->
-  <div class="main">
-    <a href="list.html" target="_blank" class="looklist" alt="look list vegetables" title="انتقل الي قائمة الأصناف">انظر قائمة الخضراوات</a>
-    <button class="addNewOrder mainClassForSetColor sen" alt="send order" title="تسجيل البيانات والطلبات"></button>
-    <a href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank" alt="facebook" title="انتقل الي فيس بوك"><img src="images/facebook.png"
-        alt="your brwser is not support this type image"></a>
-    <a class="whatsapp" href="https://wa.me/201005165512" target="_blank" alt="whatsapp" title="انتقل الي دردشة واتساب"><img src="images/whatsapp.png" alt="your brwser is not support this type image"></a>
-    <a href="https://www.instagram.com/broccoliistore/" target="_blank" alt="instagram" title="انتقل الي انستجرام "><img src="images/instagram.png" alt="your brwser is not support this type image"></a>
-  </div>
-  <div class="info">
-    <a href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank" alt="look list vegetables" title="انتقل الي فيس بوك"><img class="in-logo"
-        src="images/logo.jpeg" alt="your brwser is not supported this image"></a>
-    <h2 class="h-main">Broccoli store</h2>
-    <p class="description">
-      تقدم شركة "Broccoli" خدمة عالية الجودة للعملاء
-      الذين يحتاجون إلى شراء
-      الخضروات والفواكه المغلفة.
-      تعد خدمة التوصيل المنزلي
-      التي يقدمها الموقع واحدة من
-      أبرز ميزاته؛ إذ يتيح للعملاء
-      طلب المنتجات المفضلة لديهم بسهولة
-      ويسر، واستلامها في منزلهم وفقاً للمنطقة التي يقطنون بها.
-      يعد موقع "Broccoli" من أفضل المواقع الإلكترونية التي تتيح للعملاء
-      الطلب عبر الإنترنت، وفي غضون دقائق
-      قليلة، يمكنك التسوق بسهولة
-      وراحة،
-      وبالنسبة لعملية طلب الخضروات والفواكه المغلفة عبر موقع
-      "Broccoli"، يمكن للعملاء إرسال بياناتهم الشخصية وطلباتهم،
-      من خلال قنوات الاتصال المتاحة، تمهيداً لتنفيذ
-      الطلب على الفور، حيث يتم التواصل مع العميل في 60
-      دقيقة بأقصى تقدير، حيث يتم تأكيد الطلب وحالته
-      وموعد توصيله , الشراء الآمن والفعال هي ما يميز "Broccoli"،
-      والذي يوفر قيمة حقيقية لجميع العملاء ويجعله موقع
-      مثالي للحصول على الخضروات والفواكه المغلفة بجودة عالية
-      <mark> يرجي طلب الاوردر قبل ميعاد الاستلام بيوم حيث ان الخضراوات والفاكهة طازجة يوميا</mark>.
-    </p>
-  </div>
-  <!-- Main section end  -->
 
-<!-- Footer section start -->
-  <footer class="foot">
-    Made by Mahemoud hamed © 2023<br>
-    Gmail: mahemoudabuelsaoud@gmail.com<br>
-    Website Developer Phone Number: 01030403068
+
+<body>
+
+  <!-- Header Section Start -->
+  <header id="head">
+    <a href="#" class="logo" title="الرئيسيه">بروكلي</a>
+    <nav class="navigation">
+      <a title="انتقل الي قسم العروض" href="#cont4">عروض</a>
+      <a title="انتقل الي معلومات هامه" href="#cont2">معلومات هامه</a>
+      <a title="قسم تواصل معنا" href="#cont3">تواصل معنا</a>
+    </nav>
+  </header>
+  <!-- Header Section End -->
+  <!-- section section start -->
+  <section>
+    <article class="content-1">
+      <span class="dir" style="position: fixed;"><a href="#head"><img src="images/direction.png" alt=""></a></span>
+      <span class="dir2" style="position: fixed;"><a href="#foot"><img src="images/direction.png" alt=""></a></span>
+      <article class="h1-photo">
+        <h1>مرحبا بكم في بروكلي .</h1>
+      </article>
+
+      <article class="btn-1">
+        <button title="سجل بياناتك" class="addNewOrder mainClassForSetColor btn">
+          طلب
+        </button>
+        <a title="انتقل الي قسم الخضراوات" href="list.html" target="_blank" class="looklist" alt="look list vegetables" title="انتقل الي قائمة الأصناف">
+          الخضراوات</a>
+      </article>
+
+    </article>
+
+    <article id="cont4" class="content-4">
+      <h2 class="h2-cont3"> عروض :</h2>
+      <img class="ofeer1" src="images/ofeer1.jpeg" alt="">
+      <img class="ofeer2" src="images/ofeer2.jpeg" alt="">
+      <img class="ofeer3" src="images/ofeer3.jpeg" alt="">
+    </article>
+
+    <article class="content-2">
+      <article id="cont2" class="cont-h2-description-1 card">
+        <img src="images/logo-2.png" alt="">
+        <h2 class="h-cont2">معلومات هامة</h2>
+        <p class="description">
+          تقدم شركة "Broccoli" خدمة عالية الجودة للعملاء
+          الذين يحتاجون إلى شراء
+          الخضروات والفواكه المغلفة.
+          تعد خدمة التوصيل المنزلي
+          التي يقدمها الموقع واحدة من
+          أبرز ميزاته؛ إذ يتيح للعملاء
+          طلب المنتجات المفضلة لديهم بسهولة
+          ويسر، واستلامها في منزلهم وفقاً للمنطقة التي يقطنون بها.
+          يعد موقع "Broccoli" من أفضل المواقع الإلكترونية التي تتيح للعملاء
+          الطلب عبر الإنترنت، وفي غضون دقائق
+          قليلة، يمكنك التسوق بسهولة
+          وراحة،
+          وبالنسبة لعملية طلب الخضروات والفواكه المغلفة عبر موقع
+          "Broccoli"، يمكن للعملاء إرسال بياناتهم الشخصية وطلباتهم،
+          من خلال قنوات الاتصال المتاحة، تمهيداً لتنفيذ
+          الطلب على الفور، حيث يتم التواصل مع العميل في 60
+          دقيقة بأقصى تقدير، حيث يتم تأكيد الطلب وحالته
+          وموعد توصيله , الشراء الآمن والفعال هي ما يميز "Broccoli"،
+          والذي يوفر قيمة حقيقية لجميع العملاء ويجعله موقع
+          مثالي للحصول على الخضروات والفواكه المغلفة بجودة عالية
+          <mark> يرجي طلب الاوردر قبل ميعاد الاستلام بيوم حيث ان الخضراوات والفاكهة طازجة يوميا</mark>.
+        </p>
+      </article>
+
+
+
+    </article>
+    <article id="cont3" class="content-3">
+      <h2 class="h-cont3">تواصل معنا عبر:</h2>
+
+
+      <h3>phone: +201005165512</h3>
+      <h3>Gmail: broccolistorebrand@gmail.com</h3>
+
+      <article class="all-icones">
+        <a class="icones" href="https://www.facebook.com/elish.center?mibextid=zLoPMf" target="_blank" alt="facebook"
+          title="انتقل الي فيس بوك"><img class="face" src="images/facebook.png"
+            alt="your brwser is not support this type image"></a>
+        <a class="icones" href="https://wa.me/201005165512" target="_blank" alt="whatsapp"
+          title="انتقل الي دردشة واتساب"><img class="whats" src="images/whatsapp.png"
+            alt="your brwser is not support this type image"></a>
+        <a class="icones" href="https://www.instagram.com/broccoliistore/" target="_blank" alt="instagram"
+          title="انتقل الي انستجرام "><img class="insta" src="images/instagram.png"
+            alt="your brwser is not support this type image"></a>
+      </article>
+
+    </article>
+
+
+  </section>
+  <!-- section section end -->
+
+  <!-- Footer section start -->
+  <footer id="foot" class="foot">
+    <ul>
+      <li>Made by Mahemoud hamed © 2023</li>
+      <li>Gmail: mahemoudabuelsaoud@gmail.com</li>
+      <li>Website Developer Phone Number: 01030403068</li>
+    </ul>
   </footer>
-<!-- Footer section end -->
+  <!-- Footer section end -->
+
 </body>
+
 <script src="./cdn/swalCdn.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
 <script type="module">
+
+
   /**/
   import { docName, initializeApp, firebaseConfig, getFirestore, getCountFromServer, collection, query, where, getDocs, getDoc, setDoc, addDoc, doc, deleteDoc, onSnapshot, orderBy, limit, startAt, endAt } from './firebase.js';
+
   firebase.initializeApp(firebaseConfig);
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+
   const storage = firebase.storage();
   /**/
+
   let X;
+
   async function getCit(db, X) {
     const citiesCol = collection(db, `${X}`);
     const citySnapshot = await getDocs(citiesCol);
     const cityList = citySnapshot.docs.map(doc => doc.data());
     return cityList;
   };
+
+
+
+
   /* 5 start add new order */
-  // تعديل لالغاء ظهور تسجيل البيانات اولا 
+
+  // ظهور رسالة الطلب عند تحميل الصفحة
   // window.addEventListener("load",e=>{
   //     document.querySelector(".addNewOrder").click();
   // });
+
+
+
+
+
   document.querySelector(".addNewOrder").addEventListener("click", () => {
+
     Swal.fire({
-      title: ' سجل بياناتك وسيتم التواصل معك في خلال 60 دقيقة ',
+      title: ' انشاء طلب ',
       html: `
     
     
     <div class="mainForm" style="overflow-y: hidden; overflow-c: scroll; font-size: 17px!important; font-family: 'Cairo', sans-serif; font-weight: bold!important;">
+
         <label for="name">:الاسم</label>
         <input style="width: 98%;" class="addOrderInput" type="text" dir="auto" autocomplete="off" id="name" value="">
+
         <label for="phone">رقم الهاتف:</label>
         <input style="width: 98%;" class="addOrderInput" type="number" placeholder="" dir="auto" autocomplete="off" id="phone" value="">
-        
-        <label for="city">المحافظة/العنوان</label>
-        <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="city" value="">
-        
+
+        <label for="active">الطلب:</label>
+        <input style="width: 98%;" class="addOrderInput" id="active" type="text" dir="auto" autocomplete="off">
+
         <label for="email">عنوان البريد الإلكتروني:</label>
         <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="email" value="">
-        <label for="active">الطلب:</label>
-        <textarea style="width: 98%; " class="addOrderInput" id="active" type="text" dir="auto" autocomplete="off" value="">اختياري</textarea>
+
         <label for="note">الملاحظة:</label>
-        <textarea style="width: 98%; " class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="note" value="">اختياري</textarea>
+        <textarea style="width: 98%; " class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="note" value=""></textarea>
+
+        <label for="city">المحافظة/العنوان</label>
+        <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="city" value="">
+
+
     </div>
     
     
@@ -129,34 +206,41 @@
       confirmButtonText: 'ارسال',
     }).then((result) => {
       if (result.isConfirmed) {
+
         let name = document.querySelector("#name").value;
         let phone = document.querySelector("#phone").value;
         let email = document.querySelector("#email").value;
         let active = document.querySelector("#active").value;
         let city = document.querySelector("#city").value;
         let note = document.querySelector("#note").value;
+
+
         function idGenerator() {
           var S4 = function () {
             return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
           };
           return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
         };
+
         let id = idGenerator();
         if (name.trim() !== "" && phone.trim() !== "" && active.trim() !== "" && city.trim() !== "") {
+
           Swal.fire({
             title: 'Please Wait!',
             didOpen: () => {
               Swal.showLoading()
             }
           });
+
           AddNewOrder(name, phone, active, city, email, id);
         } else {
           Swal.fire(
-            'برجاء كتابة البيانات بشكل صحيح',
+            'برجاة كتابة البيانات بشكل صحيح',
             '',
             'error',
           )
         }
+
         function AddNewOrder(name, phone, active, city, email, id) {
           let randomOrderNumber = (Math.random() * 1000000).toFixed();
           setDoc(doc(db, "Orders", id), {
@@ -172,36 +256,58 @@
             orderDate: showDate(),
             orderNumber: randomOrderNumber,
           }).then(e => {
+
             Swal.fire(
               'تم ارسال الطلب سنقوم بالتواصل معكم قريبا',
               '',
               'success',
             )
+
           });
+
         };
+
       };
     });
+
   });
+
+
   /* 5 end add new order */
+
+
+
+
+
+
   /* 1 start function to get data now */
   function showDate() {
+
     const d = new Date();
+
     let year = d.getFullYear();
     let month = d.getMonth();
     let day = d.getDate();
     let hour = d.getHours();
     let mint = d.getMinutes();
+
     if (mint < 10) {
       mint = `0${mint}`
     }
+
     let dateNow;
+
     console.log(hour)
+
     if (hour >= 12) {
+
       dateNow = `
       ${year}/${month + 1}/${day}
       => ${hour - 12}:${mint} PM
       `;
+
     } else if (hour <= 11) {
+
       dateNow = `
       
       ${year}/${month + 1}/${day}
@@ -211,6 +317,13 @@
     }
     return dateNow;
   }
+
   /* 1 end function to get data now */
+
+
+
+
+
 </script>
+
 </html>
