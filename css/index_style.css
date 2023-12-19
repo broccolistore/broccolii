@@ -26,13 +26,15 @@ body {
 /* header section start */
 
 header {
+    position: fixed;
+    width: 100%;
     background-color: #1f356f;
     grid-column: 1/11;
     grid-row: 1/2;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    box-shadow: 1px 2px 5px rgb(0, 0, 0);
     z-index: 555;
 }
 header .logo {
@@ -106,7 +108,7 @@ section {
 
 .dir {
     bottom: 250px;
-    z-index: 22;
+    z-index: 111;
     left: 12px;
     opacity: 0.8;
 }
@@ -208,7 +210,10 @@ img {
 /* #1f356f */
 /* CONTENT TWO START  */
 .content-2 {
-    background-image: url(../images/background-content2.jpeg);
+    background-image: url(../images/WhatsApp\ Image\ 2023-12-18\ at\ 7.10.52\ PM.jpeg);
+    /* background-image: url(../images/small-phone.jpeg); */
+    background-size: 100% 100%;
+
     width: calc(100% / 1);
     height: calc(100% / 3);
     padding: 50px;
@@ -218,22 +223,22 @@ img {
     word-spacing: 5px;
 }
 .card {
-    /* margin: 10px; */
-    /* width:  20%; */
-    /* height: 80%; */
-    /* overflow: auto; */
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.4;
     padding: 20px 20px;
-    color: white;
-    /* border-top-right-radius: 20%; */
-    /* border-bottom-right-radius: 20%; */
-    box-shadow: 2px 2px 2px, -2px -2px 2px ;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black inset;
+    background-color: rgba(0, 0, 0, 0.405);
+    word-spacing: 3px;
 }
 .card img {
     border-radius: 10%;
 }
-
+#cont2 h2 {
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
 
 /* CONTENT TWO END  */
 
@@ -252,12 +257,15 @@ img {
     justify-content: space-around;
     align-items: center;
 }
-.all-icones {
-    direction: ltr;
+.content-3 h2 {
+    border-bottom: 2px solid;
+    width: 60%;
 }
 .all-icones img {
-    margin: 40px !important;
+    margin: 30px ;
 }
+
+
 .icones:hover {
     opacity: .7;
 }
@@ -280,9 +288,9 @@ img {
 
 .content-4 h2 {
     position: absolute;
-    top: 0px;
+    top: 10px;
     color: white;
-
+    border-bottom: 2px solid ;
 
 }
 .content-4 img {
@@ -379,9 +387,15 @@ footer ul {
     }
     .card {
         font-size: 15px;
+        background-image: url(../images/logo-smal2.jpeg);
+        background-size: 100% 100%;
     }
     .about {
         font-size: 15px;
+    }
+    .all-icones img {
+        width: 40px !important;
+        margin: 10px;
     }
 }
 
@@ -398,6 +412,11 @@ footer ul {
     }
     .about {
         font-size: 12px;
+    }
+
+    .all-icones img {
+        width: 40px !important;
+        margin: 10px;
     }
 
 }
