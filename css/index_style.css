@@ -105,13 +105,13 @@ section {
 
 .dir {
     bottom: 250px;
-/*     z-index: 555; */
+    z-index: 111;
     left: 12px;
     opacity: 0.8;
 }
 .dir2 {
     bottom: 200px;
-/*     z-index: 555; */
+    z-index: 111;
     left: 10px;
     transform: rotate(180deg);
     opacity: 0.8;
