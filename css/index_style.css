@@ -445,7 +445,7 @@ footer ul {
   }
 @media (max-width: 450px) {
     .content-1 {
-        background-image: url(../images/phone2.WebP);
+        background-image: url(../images/phone2.webp);
 
     }
     .content-1 h1 {
