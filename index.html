@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,9 +19,7 @@
   <meta name="author" content="Mahmoud hamed">
   <meta name="description"
     content="موقعنا هو المكان المثالي لتلبية احتياجكم للخضروات والفواكه الطازجة والمغلفة بعناية، وذلك لتسهيل حياتكم اليومية وتوفير الوقت والجهد في البحث والتسوق. نحن نقدم خدمة توصيل سريعة ومريحة إلى باب منزلكم، مع وجود خيارات مختلفة للحجم والنوعية مناسبة لاحتياجاتكم. تسوقوا على موقعنا الآن واحصلوا على خضروات وفواكه طازجة وصحية، جاهزة للاستعمال الفوري في وصفاتكم المفضلة. يمكنكم الاعتماد على جودة منتجاتنا وسرعة ودقة التوصيل.">
-</head>
-
-
+  </head>
 <body>
 
   <!-- Header Section Start -->
@@ -34,6 +32,7 @@
     </nav>
   </header>
   <!-- Header Section End -->
+  <!-- ^^^^^^ -->
   <!-- section section start -->
   <section>
     <article id="head" class="content-1">
@@ -42,18 +41,16 @@
       <article class="h1-photo">
         <h1>مرحبا بكم في بروكلي .</h1>
       </article>
-
       <article class="btn-1">
-
         <!-- section masenger start -->
         <!-- Messenger المكون الإضافي "دردشة" Code -->
-        <span  id="fb-root"></span>
+        <span id="fb-root"></span>
 
         <!-- Your المكون الإضافي "دردشة" code -->
-        <span  id="fb-customer-chat" class="fb-customerchat">
+        <span id="fb-customer-chat" class="fb-customerchat">
         </span>
         <!-- section masenger end   -->
-        
+
         <button title="سجل بياناتك" class="addNewOrder mainClassForSetColor btn">
           طلب
         </button>
@@ -97,7 +94,8 @@
           وموعد توصيله , الشراء الآمن والفعال هي ما يميز "Broccoli"،
           والذي يوفر قيمة حقيقية لجميع العملاء ويجعله موقع
           مثالي للحصول على الخضروات والفواكه المغلفة بجودة عالية
-          <mark style="background-color: black; color: white; font-size: 8px; "> يرجي طلب الاوردر قبل ميعاد الاستلام بيوم حيث ان الخضراوات والفاكهة طازجة يوميا</mark>.
+          <mark > يرجي طلب الاوردر قبل ميعاد الاستلام
+            بيوم حيث ان الخضراوات والفاكهة طازجة يوميا</mark>.
         </p>
       </article>
 
@@ -142,30 +140,30 @@
 
 </body>
 <script>
-     // section masenger start
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "1839654556272371");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
+  // section masenger start
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "1839654556272371");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
 
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v18.0'
-        });
-      };
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: 'v18.0'
+    });
+  };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-      // section masenger end 
-    </script>
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  // section masenger end 
+</script>
 <script src="./cdn/swalCdn.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
