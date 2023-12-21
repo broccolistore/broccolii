@@ -7,7 +7,7 @@ body {
 table {
   border-collapse: collapse;
   /* width: 200%; */
-  background-image: url(../images/logo.jpeg);
+  background-image: url(../images/logo.WebP);
   background-position: 70%;
   background-size: cover;
 }
