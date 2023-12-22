@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="خضار-جاهز-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.WebP">
+    <link rel="canonical" href="https://broccolistore.github.io/broccolii">
+    <meta name="google-site-verification" content="rmYhH5U7s21lZanHo0N3yd6rMCtttBKhNfDW6XlJl9k">
+    <title>broccoli - اشتري الخضراوات والفواكه المغلفة| توصيل سريع إلى باب منزلك</title>
+    <meta name="keywords"
+      content="خضار,خضراوات,فاكه,تجهزخضار,خضراوات جاهزة,فاكه مغلفة,توصيل,خدمة توصيل,بروكلي,بروكلي ستور ,broccoli,broccoli store,brokly,توصيل خضار,fv,;gd,vegtables,fruts,سوق,سوق العبو,تغليف الخضراوات">
+    <meta name="author" content="Mahmoud hamed">
+    <meta name="description"
+      content="موقعنا هو المكان المثالي لتلبية احتياجكم للخضروات والفواكه الطازجة والمغلفة بعناية، وذلك لتسهيل حياتكم اليومية وتوفير الوقت والجهد في البحث والتسوق. نحن نقدم خدمة توصيل سريعة ومريحة إلى باب منزلكم، مع وجود خيارات مختلفة للحجم والنوعية مناسبة لاحتياجاتكم. تسوقوا على موقعنا الآن واحصلوا على خضروات وفواكه طازجة وصحية، جاهزة للاستعمال الفوري في وصفاتكم المفضلة. يمكنكم الاعتماد على جودة منتجاتنا وسرعة ودقة التوصيل.">
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 10% 1fr auto;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            /* background-image: url(images/logo.jpeg); */
+            /* background-size: cover; */
+            /* background-repeat: no-repeat; */
+            background-color: #1d366f;
+        
+        }
+        
+        header {
+            /* grid-area: head; */
+            background-color: inherit;
+            grid-column: 1/11;
+            grid-row: 1/2;
+            height: 10%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1d366f;
+            /* border-bottom: 3px solid black; */
+            /* box-shadow: 3px 3px 3px white; */
+        }
+        
+        header img {
+            width: 15%;
+            /* border-radius: 50%; */
+            order: 3;
+        }
+        
+        header h1 {
+        
+            border-bottom: 2px solid rgb(0, 0, 0);
+            font-size: 50px;
+            width: 50%;
+            color: white;
+            order: 2;
+            line-height: 1.8;
+        
+        }
+        
+        header p {
+            margin-bottom: 0px;
+            font-size: 30px;
+            color: white;
+            order: 1;
+            background-position: center;
+            background-size: 100% 100%;
+            line-height: 1;
+        }
+        
+        header p img {
+            width: 30px;
+        }
+        
+        section {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            grid-column: 1/11;
+            grid-row: 2/3;
+            /* background-size: 100%; */
+            /* background-position: 50% 50%; */
+            /* background-repeat: no-repeat; */
+        }
+        
+        section div {
+            display: flex;
+            width: 50%;
+            margin: 50px auto;
+            height: 80%;
+            background-color: #174026de;
+            border-bottom-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        section img {
+            /* width: 100px; */
+            height: 100px;
+            box-shadow: 2px 2px 5px #2a6240, -2px -2px 5px #184427;
+            border-radius: 20%;
+            margin-top: 10px;
+            /* margin-left: 150px; */
+        }
+        
+        section h3 {
+            color: white;
+            position: relative;
+            /* left: 50%; */
+            /* margin: 10px; */
+        }
+        
+        footer {
+            /* grid-area: foot; */
+            background-color: black;
+            grid-column: 1/11;
+            grid-row: 3/4;
+            color: white;
+        }
+        
+        @media (max-width:1400px) {
+            body {
+                font-size: 12px;
+            }
+        
+            section {
+                grid-template-columns: repeat(3, 1fr);
+        
+            }
+        
+            section img {
+                width: 90%;
+            }
+        }
+        
+        @media (max-width:1024px) {
+            body {
+                font-size: 12px;
+            }
+        
+            section {
+                grid-template-columns: repeat(3, 1fr);
+        
+            }
+        
+            section img {
+                width: 90%;
+            }
+        }
+        
+        @media (max-width:800px) {
+            body {
+                font-size: 12px;
+                grid-template-rows: 10% auto auto;
+            }
+        
+            section {
+                grid-template-columns: repeat(4, 1fr);
+        
+            }
+        
+            section img {
+                width: 80%;
+            }
+        
+            section div {
+                width: 80%;
+            }
+        }
+        
+        @media (max-width: 651px) {
+            body {
+                font-size: 12px;
+                grid-template-rows: 10% auto auto;
+
+            }
+        
+            section div {
+                width: 70%;
+            }
+        
+            section img {
+                width: 70%;
+            }
+        
+            section {
+                background-image: url(images/logo.jpeg);
+                background-size: 100% 50%;
+                grid-template-columns: repeat(4, 1fr);
+        
+            }
+        
+            header {
+                height: 10% !important;
+            }
+        
+            header h1 {
+                font-size: 1rem;
+                padding-bottom: 5%;
+            }
+        
+        
+            header p {
+                font-size: 14px;
+                /* margin-top: 10%; */
+            }
+        
+        }
+        
+        @media (max-width: 450px) {
+            body {
+                gap: 0px;
+                /* grid-template-rows: 10% auto auto; */
+
+            }
+            
+        
+            section div {
+                height: 90%;
+                width: 100%;
+            }
+        
+            section img {
+                width: 80%;
+                height: 50%;
+            }
+        
+            section {
+                background-image: url(images/logo.jpeg);
+                background-size: 100% 50%;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            section h3 {
+                font-size: 10px;
+            }
+        
+            header {
+                height: 10% !important;
+            }
+        
+            header h1 {
+                font-size: 14px;
+                padding-bottom: 5%;
+            }
+        
+        
+            header p {
+                font-size: 10px;
+                /* margin-top: 20%; */
+            }
+            header p img {
+                width: 10px;
+            }
+        }
+        
+        /* @media (max-width: 420px) {
+            body {
+                font-size: 12px;
+            }
+        
+            section div {
+                width: 60%;
+            }
+        
+            section img {
+                width: 90%;
+            }
+        
+            section {
+                grid-template-columns: repeat(3, 1fr);
+        
+            }
+        
+            header {
+                height: 50% !important;
+            }
+        
+            header h1 {
+                font-size: 1rem;
+                padding: 0;
+            }
+        
+        
+            header p {
+                font-size: 1rem;
+            }
+        } */
+        .button {
+            background-color: rgba(0, 0, 0, 0.578);
+            position: fixed;
+            height: 60px;
+            bottom: 50px;
+            right: 20px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            animation-name: move;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 10px;
+            z-index: 555;
+            box-shadow: 3px 3px 3px inset #3d3a3a;
+            cursor: pointer;
+        }
+        .button a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 20px;
+            z-index: 5;
+
+        }
+        @keyframes move {
+            to {
+                transform: scale(1.2);
+            }
+        }
+        .button-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 50px;
+            left: 20px;
+            width: fit-content;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.578);
+            z-index: 4444;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            /* padding: 10px; */
+            animation-name: move;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 10px;
+            z-index: 555;
+            box-shadow: 3px 3px 3px inset #3d3a3a;
+        }
+        .button-2 a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 20px;
+            z-index: 5;
+
+        }
+        .button-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 150px;
+            left: 20px;
+            width: fit-content;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.578);
+            z-index: 4444;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            /* padding: 10px; */
+            animation-name: move;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 10px;
+            z-index: 555;
+            box-shadow: 3px 3px 3px inset #3d3a3a;
+        }
+        .button-3 a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 20px;
+            z-index: 5;
+
+        }
+        /* header section start */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: hsl(224, 56%, 28%);
+    /* display: flex; */
+    justify-content: space-around;
+    /* align-items: center; */
+    box-shadow: 1px 2px 5px rgb(0, 0, 0);
+    z-index: 555;
+}
+header .logo {
+    color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    /* border-bottom: 3px solid #0a1951; */
+    /* padding: 18px; */
+    text-decoration: none;
+
+}
+nav a:hover {
+    color: #02071d;
+    border-bottom: 5px solid ;
+
+}
+.logo {
+    font-size: 30px;
+    /* border-bottom: 5px solid #0a1951; */
+    padding: 5px;
+    text-shadow: 5px 5px 5px black;
+    font-family: 'Cairo', sans-serif ;
+    text-decoration: none;
+}
+.logo:hover {
+    color: #02071d;
+    border-bottom: 5px solid ;
+}
+header h1 {
+    border-bottom: none;
+}
+/* header section end */
+        </style>
+</head>
+<body>
+   <!-- <header>
+       <h1>قائمه <br>الخضراوات </h1>
+    <p><img src="images/new.webp" alt=""> ملحوظه <br> يتم تحضير الطلبات <br> مغلفه ومنقاه <br> بالقطعة ..</p>
+    <img src="images/logo-smal.WebP" alt="">
+   </header> -->
+   <header>
+    <a href="index.html" target="_blank" class="logo" title="الرئيسيه">بروكلي</a>
+  <h1>  الخضراوات الجاهزه</h1>
+
+    <nav class="navigation">
+      <a title="انتقل الي قائمة الخضراوات" href="قائمة الخضراوات.html" target="_blank">قائمه الخضراوات</a>
+      <a title="انتقل الي قائمةالفواكه" href="قائمةالفواكه.html" target="_blank">قائمة الفواكه</a>
+      <!-- <a title="  انتقل الي قائمه الخضراوات الجاهزه" href="خضارجاهز.html" target="_blank">الخضراوات الجاهزه</a> -->
+    </nav>
+  </header>
+   <section>
+    <span class="button"><a  class="addNewOrder" title="سجل بياناتك من هنا">اطلب الأن </a></span>   
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>12</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>15</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>58</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>58</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+   </section>
+      <footer>
+        <div class="foot">
+        Made by mahmoud hamed<br>
+        Gmail: mahemoudabuelsaoud@gmail.com<br>
+        Website Developer Phone Number: 01030403068
+        </div>
+      </footer>
+</body>
+<script>
+    // section masenger start
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "1839654556272371");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+  
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v18.0'
+      });
+    };
+  
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    // section masenger end 
+  </script>
+  <script src="./cdn/swalCdn.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+  <script type="module">
+    /**/
+    import { docName, initializeApp, firebaseConfig, getFirestore, getCountFromServer, collection, query, where, getDocs, getDoc, setDoc, addDoc, doc, deleteDoc, onSnapshot, orderBy, limit, startAt, endAt } from './firebase.js';
+    firebase.initializeApp(firebaseConfig);
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const storage = firebase.storage();
+    /**/
+    let X;
+    async function getCit(db, X) {
+      const citiesCol = collection(db, `${X}`);
+      const citySnapshot = await getDocs(citiesCol);
+      const cityList = citySnapshot.docs.map(doc => doc.data());
+      return cityList;
+    };
+    /* 5 start add new order */
+    // تعديل لالغاء ظهور تسجيل البيانات اولا 
+    // window.addEventListener("load",e=>{
+    //     document.querySelector(".addNewOrder").click();
+    // });
+    document.querySelector(".addNewOrder").addEventListener("click", () => {
+      Swal.fire({
+        title: ' سجل بياناتك وسيتم التواصل معك في خلال 60 دقيقة ',
+        html: `
+      
+      
+      <div class="mainForm" style="overflow-y: hidden; overflow-c: scroll; font-size: 17px!important; font-family: 'Cairo', sans-serif; font-weight: bold!important;">
+          <label for="name">:الاسم</label>
+          <input style="width: 98%;" class="addOrderInput" type="text" dir="auto" autocomplete="off" id="name" value="">
+          <label for="phone">رقم الهاتف:</label>
+          <input style="width: 98%;" class="addOrderInput" type="number" placeholder="" dir="auto" autocomplete="off" id="phone" value="">
+          
+          <label for="city">المحافظة/العنوان</label>
+          <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="city" value="">
+          
+          <label for="email">عنوان البريد الإلكتروني:</label>
+          <input style="width: 98%;" class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="email" value="">
+          <label for="active">الطلب:</label>
+          <textarea style="width: 98%; " class="addOrderInput" id="active" type="text" dir="auto" autocomplete="off" value="">اختياري</textarea>
+          <label for="note">الملاحظة:</label>
+          <textarea style="width: 98%; " class="addOrderInput" type="text" dir="rtl" autocomplete="off" id="note" value="">اختياري</textarea>
+      </div>
+      
+      
+      `,
+        confirmButtonText: 'ارسال',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          let name = document.querySelector("#name").value;
+          let phone = document.querySelector("#phone").value;
+          let email = document.querySelector("#email").value;
+          let active = document.querySelector("#active").value;
+          let city = document.querySelector("#city").value;
+          let note = document.querySelector("#note").value;
+          function idGenerator() {
+            var S4 = function () {
+              return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+            };
+            return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+          };
+          let id = idGenerator();
+          if (name.trim() !== "" && phone.trim() !== "" && active.trim() !== "" && city.trim() !== "") {
+            Swal.fire({
+              title: 'Please Wait!',
+              didOpen: () => {
+                Swal.showLoading()
+              }
+            });
+            AddNewOrder(name, phone, active, city, email, id);
+          } else {
+            Swal.fire(
+              'برجاء كتابة البيانات بشكل صحيح',
+              '',
+              'error',
+            )
+          }
+          function AddNewOrder(name, phone, active, city, email, id) {
+            let randomOrderNumber = (Math.random() * 1000000).toFixed();
+            setDoc(doc(db, "Orders", id), {
+              id: id,
+              name: name,
+              phone: phone,
+              city: city,
+              active: active,
+              email: email,
+              note: note,
+              country_calling_code: "+20",
+              date: Date.now(),
+              orderDate: showDate(),
+              orderNumber: randomOrderNumber,
+            }).then(e => {
+              Swal.fire(
+                'تم ارسال الطلب سنقوم بالتواصل معكم قريبا',
+                '',
+                'success',
+              )
+            });
+          };
+        };
+      });
+    });
+    /* 5 end add new order */
+    
+    /* 1 start function to get data now */
+    function showDate() {
+      const d = new Date();
+      let year = d.getFullYear();
+      let month = d.getMonth();
+      let day = d.getDate();
+      let hour = d.getHours();
+      let mint = d.getMinutes();
+      if (mint < 10) {
+        mint = `0${mint}`
+      }
+      let dateNow;
+      console.log(hour)
+      if (hour >= 12) {
+        dateNow = `
+        ${year}/${month + 1}/${day}
+        => ${hour - 12}:${mint} PM
+        `;
+      } else if (hour <= 11) {
+        dateNow = `
+        
+        ${year}/${month + 1}/${day}
+           ${hour}:${mint} AM
+        
+        `;
+      }
+      return dateNow;
+    }
+    /* 1 end function to get data now */
+  </script>
+</html>
