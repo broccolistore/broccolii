@@ -19,7 +19,7 @@
       content="موقعنا هو المكان المثالي لتلبية احتياجكم للخضروات والفواكه الطازجة والمغلفة بعناية، وذلك لتسهيل حياتكم اليومية وتوفير الوقت والجهد في البحث والتسوق. نحن نقدم خدمة توصيل سريعة ومريحة إلى باب منزلكم، مع وجود خيارات مختلفة للحجم والنوعية مناسبة لاحتياجاتكم. تسوقوا على موقعنا الآن واحصلوا على خضروات وفواكه طازجة وصحية، جاهزة للاستعمال الفوري في وصفاتكم المفضلة. يمكنكم الاعتماد على جودة منتجاتنا وسرعة ودقة التوصيل.">
   
     <style>
-          @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
         
         * {
             box-sizing: border-box;
@@ -127,7 +127,11 @@
             z-index: 5;
 
         }
-
+        @keyframes move {
+            to {
+                transform: scale(1.2);
+            }
+        }
         /* header section start */
 
 header {
@@ -196,7 +200,9 @@ header h1 {
         }
         
         @media (max-width:1024px) {
-
+            body {
+                font-size: 12px;
+            }
         
             section {
                 grid-template-columns: repeat(3, 1fr);
@@ -229,6 +235,9 @@ header h1 {
         }
         
         @media (max-width: 651px) {
+            body {
+                grid-template-rows: 50px 1fr auto;
+            }
         
             section div {
                 width: 70%;
@@ -247,12 +256,18 @@ header h1 {
         
             header h1 {
                 font-size: 1rem;
+                padding-bottom: 5%;
+            }
+        
+        
+            header p {
+                font-size: 14px;
             }
         
         }
         
         @media (max-width: 450px) {
-        
+              
             section div {
                 height: 90%;
                 width: 100%;
@@ -266,20 +281,14 @@ header h1 {
             section {
                 background-image: url(images/logo.jpeg);
                 background-size: 100% 50%;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
             }
         
         }
-        @media (max-width: 800px ) {
-            body {
-                grid-template-rows: 100px 1fr auto;
-            }
+        .ba {
+            width: 80%;
         }
-        @keyframes move {
-            to {
-                transform: scale(1.2);
-            }
-        }
+
         </style>
 </head>
 <body>
@@ -300,46 +309,37 @@ header h1 {
    <section>
 
     <span class="button"><a  class="addNewOrder" title="سجل بياناتك من هنا">اطلب الأن </a></span>   
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>12</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>15</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>58</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>58</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
-    <div class="child"><img src="images/3enb.jpg" alt=""><h3>كمثرى</h3><h3>كمثرى</h3></div>
+    <div class="child"><img class="ba" src="img-list-2/id1.webp" alt=""><h3>قشطه</h3><h3>50</h3></div>
+    <div class="child"><img src="img-list-2/id2.webp" alt=""><h3>تفاح</h3><h3>55</h3></div>
+    <div class="child"><img src="img-list-2/id3.webp" alt=""><h3>جوافة</h3><h3>22</h3></div>
+    <div class="child"><img src="img-list-2/id4.webp" alt=""><h3>اناناس</h3><h3>........</h3></div>
+    <div class="child"><img class="ba" src="img-list-2/id5.webp" alt=""><h3>مشمش</h3><h3>........</h3></div>
+    <div class="child"><img src="img-list-2/id6.webp" alt=""><h3>فراولة</h3><h3>26</h3></div>
+    <div class="child"><img class="ba" src="img-list-2/id7.webp" alt=""><h3>برقوق</h3><h3>55</h3></div>
+    <div class="child"><img src="img-list-2/id8.webp" alt=""><h3>عنب</h3><h3>25</h3></div>
+    <div class="child"><img src="img-list-2/id9.webp" alt=""><h3>بطيخ</h3><h3>........</h3></div>
+    <div class="child"><img src="img-list-2/id10.webp" alt=""><h3>كيوي(ق)</h3><h3>10</h3></div>
+    <div class="child"><img src="img-list-2/id11.webp" alt=""><h3>افوكادو</h3><h3>140</h3></div>
+    <div class="child"><img src="img-list-2/id12.webp" alt=""><h3>كرز</h3><h3>........</h3></div>
+    <div class="child "><img class="ba" src="img-list-2/id13.webp" alt=""><h3>موز</h3><h3>25</h3></div>
+    <div class="child"><img src="img-list-2/id14.webp" alt=""><h3>توت</h3><h3>........</h3></div>
+    <div class="child"><img src="img-list-2/id15.webp" alt=""><h3>جريب فروت</h3><h3>12</h3></div>
+    <div class="child"><img src="img-list-2/id16.webp" alt=""><h3>مانجو</h3><h3>50</h3></div>
+    <div class="child"><img src="img-list-2/id17.webp" alt=""><h3>برتقال</h3><h3>17</h3></div>
+    <div class="child"><img src="img-list-2/id18.webp" alt=""><h3>خوخ</h3><h3>.........</h3></div>
+    <div class="child"><img src="img-list-2/id19.webp" alt=""><h3>رومان</h3><h3>35</h3></div>
+    <div class="child"><img src="img-list-2/id20.webp" alt=""><h3>جوز الهند</h3><h3>........</h3></div>
+    <div class="child"><img src="img-list-2/id21.webp" alt=""><h3>يوسفي</h3><h3>17</h3></div>
+    <div class="child"><img src="img-list-2/id22.webp" alt=""><h3>كنتلوب</h3><h3>15</h3></div>
+    <div class="child"><img class="ba" src="img-list-2/id23.webp" alt=""><h3>تين</h3><h3>........</h3></div>
+    <div class="child"><img src="img-list-2/id24.webp" alt=""><h3>كمثرى</h3><h3>.......</h3></div>
+    <div class="child"><img src="images/logo.WebP" alt=""><h3>Broccoli store</h3><h3>00000</h3></div>
+    <div class="child"><img src="images/logo.WebP" alt=""><h3>Broccoli store</h3><h3>00000</h3></div>
+    <div class="child"><img src="images/logo.WebP" alt=""><h3>Broccoli store</h3><h3>00000</h3></div>
+    <div class="child"><img src="images/logo.WebP" alt=""><h3>Broccoli store</h3><h3>00000</h3></div>
+    <div class="child"><img src="images/logo.WebP" alt=""><h3>Broccoli store</h3><h3>00000</h3></div>
+    <div class="child"><img src="images/logo.WebP" alt=""><h3>Broccoli store</h3><h3>00000</h3></div>
+
    </section>
       <footer>
         <div class="foot">
