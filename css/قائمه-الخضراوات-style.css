@@ -72,7 +72,6 @@ section h3 {
 }
 section h2 {
     color: wheat;
-    /* position: relative; */
 }
 
 footer {
@@ -204,7 +203,7 @@ border-bottom: none;
     }
 
     section {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
 
     }
 
@@ -233,18 +232,13 @@ border-bottom: none;
     section {
         background-image: url(images/logo.jpeg);
         background-size: 100% 50%;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
 
     }
 
     header h1 {
         font-size: 1rem;
         padding-bottom: 5%;
-    }
-
-
-    header p {
-        font-size: 14px;
     }
 
 }
@@ -257,31 +251,12 @@ border-bottom: none;
     }
 
     section img {
-        width: 90%;
-        height: 40%;
+        width: 80%;
+        height: 50%;
     }
 
     section {
-        /* background-image: url(images/logo.jpeg); */
-        /* background-size: 100% 50%; */
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 30%);
     }
-.fix {
-    width: 80%;
-}
-}
-@media (max-width: 400px) {
-    .fix {
-        width: 70%;
-    }
-}
-@media (max-width: 350px) {
-    .fix {
-        width: 60%;
-    }
-}
 
-
-/* .ba {
-    width: 80%;
-} */
+}
