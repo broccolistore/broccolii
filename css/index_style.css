@@ -295,7 +295,7 @@ img {
 }
 .content-4 img {
     width: calc(100% / 4);
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     margin: 20px;
     animation-name: scale;
