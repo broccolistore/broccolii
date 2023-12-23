@@ -70,6 +70,9 @@ section h3 {
     color: white;
     position: relative;
 }
+section h2 {
+    color: wheat;
+}
 
 footer {
     background-color: black;
