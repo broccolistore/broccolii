@@ -227,13 +227,13 @@ img {
     line-height: 1.6;
     padding: 20px 20px;
     color: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px black inset;
     background-color: rgba(0, 0, 0, 0.405);
     word-spacing: 3px;
 }
 .card img {
-    border-radius: 10%;
+    border-radius: 5%;
 }
 #cont2 h2 {
     border-bottom: 1px solid white;
