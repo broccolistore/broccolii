@@ -72,6 +72,7 @@ section h3 {
 }
 section h2 {
     color: wheat;
+    /* position: relative; */
 }
 
 footer {
@@ -256,17 +257,31 @@ border-bottom: none;
     }
 
     section img {
-        width: 80%;
-        height: 50%;
+        width: 90%;
+        height: 40%;
     }
 
     section {
-        background-image: url(images/logo.jpeg);
-        background-size: 100% 50%;
+        /* background-image: url(images/logo.jpeg); */
+        /* background-size: 100% 50%; */
         grid-template-columns: repeat(3, 1fr);
     }
-
+.fix {
+    width: 80%;
 }
+}
+@media (max-width: 400px) {
+    .fix {
+        width: 70%;
+    }
+}
+@media (max-width: 350px) {
+    .fix {
+        width: 60%;
+    }
+}
+
+
 /* .ba {
     width: 80%;
 } */
