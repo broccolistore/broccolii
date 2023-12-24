@@ -357,7 +357,7 @@ footer ul {
 /* footer section end */
 /* send order start */
 .swal2-backdrop-show {
-    background-image: url(../images/back.WebP) !important;
+/*     background-image: url(../images/back.WebP) !important; */
 }
 
 /* send order end */
