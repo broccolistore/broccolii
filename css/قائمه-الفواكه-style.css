@@ -32,7 +32,7 @@ header {
 header h1 {
     font-size: 30px;
     width: fit-content;
-    color: white;        
+    color: #707070;        
 }
 
 
@@ -200,6 +200,8 @@ border-bottom: none;
     body {
         font-size: 12px;
         grid-template-rows: 10% auto auto;
+        gap: 0;
+        line-height: 1.5;
     }
 
     section {
@@ -250,22 +252,31 @@ border-bottom: none;
 
 @media (max-width: 450px) {
       
-    section div {
-        height: 90%;
-        width: 100%;
-    }
-
-    section img {
-        width: 80%;
-        height: 50%;
-    }
 
     section {
         background-image: url(images/logo.jpeg);
         background-size: 100% 50%;
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: 30% 30% 30% ; */
+        grid-template-columns: repeat(3,1fr);
+        gap: 0;
     }
-
+    header h1 {
+        line-height: 1.2;
+        font-size: 15px;
+        margin: 5px;
+    }
+    header .logo {
+        font-size: 15px;
+    }
+    header nav {
+        line-height: 1.2;
+        font-size: 12px;
+    }
+    section div {
+        width: 90%;
+        height: 75%;
+        border-radius: 10%;
+    }
 }
 .ba {
     width: 80%;
