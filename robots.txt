@@ -1,6 +1,10 @@
 User-agent: *
 Disallow: /index.html
 Disallow: /list.html
+Disallow: /قائمة-الخضراوات.html
+Disallow: /قائمة-الفواكه.html
+Disallow: /خضار-جاهز.html
+
 
 
 Sitemap: https://broccolistore.github.io/sitemap.xml
