@@ -19,10 +19,27 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 5% repeat(10, auto) 5%;
     background-color: #1f356f;
-
+    
 }
-
-
+/* element send order start */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.swal2-popup.swal2-modal.swal2-show {
+    background-color: #1f356f;
+    color: white;
+}
+/* element send order end */
 /* header section start */
 
 header {
@@ -91,7 +108,7 @@ section {
 .dir2:hover {
     transform: scaley(1.3) rotate(180deg);
 }
-/* CONTENT ONE START */
+/* CONTENT-1 START */
 .content-1 {
     background-image: url(../images/WhatsApp\ Image\ 2023-12-18\ at\ 7.10.52\ PM.WebP);
     background-size: 100% 100% !important;
@@ -103,7 +120,6 @@ section {
     justify-content: space-around;
     align-items: center;
     padding: 150px;
-    /* border-radius: 20px ; */
 }
 
 .dir {
@@ -143,7 +159,6 @@ h1 {
     left: -750px; 
     width: 250%;
     height: 350px;
-    /* border-radius: 50%; */
 }
 .btn-1 {
     display: flex;
@@ -206,14 +221,13 @@ img {
     text-align: center;
 }
 
-/* CONTENT ONE END */
-/* #1f356f */
-/* CONTENT TWO START  */
+/* CONTENT-1  END */
+
+/* CONTENT-2 START  */
 .content-2 {
     background-image: url(../images/WhatsApp\ Image\ 2023-12-18\ at\ 7.10.52\ PM.WebP);
     /* background-image: url(../images/small-phone.jpeg); */
     background-size: 100% 100%;
-
     width: calc(100% / 1);
     height: calc(100% / 3);
     padding: 50px;
@@ -239,11 +253,9 @@ img {
     border-bottom: 1px solid white;
     padding: 5px;
 }
+/* CONTENT-2 END  */
 
-/* CONTENT TWO END  */
-
-/* CONTENT THREE START  */
-
+/* CONTENT-3 START  */
 .content-3 {
     background-color: #1f356f;
     color: white;
@@ -264,16 +276,12 @@ img {
 .all-icones img {
     margin: 30px ;
 }
-
-
 .icones:hover {
     opacity: .7;
 }
+/* CONTENT-3 END  */
 
-
-/* CONTENT THREE END  */
-
-/* CONTENT FOUR START */
+/* CONTENT-4 START */
 .content-4 {
     display: flex;
     justify-content: center;
@@ -282,10 +290,7 @@ img {
     padding: 10%;
     background-color: #1f356f;
     box-shadow: 1px 1px 1px black,-1px -1px 1px black;
-    /* background-color: #284CA0; */
-    /* background-image: url(../images/background-content2.jpeg); */
 }
-
 .content-4 h2 {
     position: absolute;
     top: 10px;
@@ -306,7 +311,6 @@ img {
     animation-play-state: running;
 
 }
-
 .content-4 img:hover {
     animation-play-state: paused;
 }
@@ -319,24 +323,18 @@ img {
 .ofeer3 {
     animation-delay: 3s;
 }
-/* .content-4 img:hover {
-    animation-play-state: paused;
-} */
 @keyframes scale {
     to {
         transform: scale(1.1);
     }
 }
 
-/* CONTENT FOUR START */
+/* CONTENT-4 START */
 
 
 /* section section end */
-
 /* %% */
-
 /* footer section start */
-
 footer {
     background-color: black;
     color: white;
@@ -355,12 +353,7 @@ footer ul {
 }
 
 /* footer section end */
-/* send order start */
-.swal2-backdrop-show {
-/*     background-image: url(../images/back.WebP) !important; */
-}
-
-/* send order end */
+/* media query 800px start */
 @media (max-width: 800px) {
     .content-1,
     .content-2,
@@ -398,8 +391,9 @@ footer ul {
         margin: 10px;
     }
 }
+/* media query 800px end */
 
-
+/* media query 651px start */
 @media (max-width: 651px) {
     .content-1,
     .content-2,
@@ -427,22 +421,9 @@ footer ul {
     .content-4 h2 {
         font-size: 15px;
     }
-
 }
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  .mySlides {
-    display: none;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+/* media query 651px end */
+
 @media (max-width: 450px) {
     .content-1 {
         background-image: url(../images/phone2.webp);
