@@ -39,6 +39,11 @@ body {
     background-color: #1f356f;
     color: white;
 }
+.swal2-success-circular-line-right,
+.swal2-success-circular-line-left,
+.swal2-success-fix {
+    background-color: #1f356f !important;
+}
 /* element send order end */
 /* header section start */
 
