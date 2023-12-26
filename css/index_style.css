@@ -351,7 +351,6 @@ footer {
 footer ul {
     list-style: inside;
 }
-
 /* footer section end */
 /* media query 800px start */
 @media (max-width: 800px) {
@@ -423,7 +422,7 @@ footer ul {
     }
 }
 /* media query 651px end */
-
+/* media query 450px start */
 @media (max-width: 450px) {
     .content-1 {
         background-image: url(../images/phone2.webp);
@@ -441,11 +440,9 @@ footer ul {
         margin: 40px;
     }
     .content-4 img:hover {
-        /* transform: scale(3) !important; */
         width: 60%;
         animation-play-state: paused;
     }
-
     .about {
         font-size: 10px;
     }
@@ -455,8 +452,9 @@ footer ul {
     .content-4 h2 {
         font-size: 12px;
     }
-
 }
+/* media query 450px end */
+/* media query 380px start */
 @media (max-width: 380px) {
         footer {
             font-size: 12px;
@@ -484,9 +482,5 @@ footer ul {
         nav {
             font-size: 12px;
         }
-
-
 }
-.swal2-popup {
-    border-radius: 20% !important;
-}
+/* media query 380px end */
