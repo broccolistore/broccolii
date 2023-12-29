@@ -304,7 +304,7 @@ img {
 
 }
 .content-4 img {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     margin: 20px;
@@ -314,7 +314,9 @@ img {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-play-state: running;
-
+}
+.fix {
+    height: 78%;
 }
 
 .content-4 img:hover {
