@@ -316,9 +316,7 @@ img {
     animation-play-state: running;
 
 }
-.fix {
-    height: 78%;
-}
+
 .content-4 img:hover {
     animation-play-state: paused;
 }
