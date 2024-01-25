@@ -13,7 +13,21 @@
 <meta name="google-site-verification" content="rmYhH5U7s21lZanHo0N3yd6rMCtttBKhNfDW6XlJl9k" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="./cdn/momentCdn.js"></script>
-    
+      <script>
+        document.addEventListener('keydown', function (e) {
+            // Replace the following key code with the one you would like to use
+            if (e.keyCode === 85 && (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)) {
+                alert('Sorry, this function is disabled for security reasons.');
+                return false;
+            }
+        }, false);
+
+        // Right click disable
+        window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('Sorry, this function is disabled for security reasons.');
+        }, false);
+    </script> 
 </head>
 <body>
 
