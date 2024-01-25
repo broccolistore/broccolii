@@ -17,6 +17,21 @@
   <meta name="author" content="Mahmoud hamed">
   <meta name="description"
     content="موقعنا هو المكان المثالي لتلبية احتياجكم للخضروات والفواكه الطازجة والمغلفة بعناية، وذلك لتسهيل حياتكم اليومية وتوفير الوقت والجهد في البحث والتسوق. نحن نقدم خدمة توصيل سريعة ومريحة إلى باب منزلكم، مع وجود خيارات مختلفة للحجم والنوعية مناسبة لاحتياجاتكم. تسوقوا على موقعنا الآن واحصلوا على خضروات وفواكه طازجة وصحية، جاهزة للاستعمال الفوري في وصفاتكم المفضلة. يمكنكم الاعتماد على جودة منتجاتنا وسرعة ودقة التوصيل.">
+   <script>
+        document.addEventListener('keydown', function (e) {
+            // Replace the following key code with the one you would like to use
+            if (e.keyCode === 85 && (navigator.platform.match('Mac') ? e.metaKey : e.ctrlKey)) {
+                alert('Sorry, this function is disabled for security reasons.');
+                return false;
+            }
+        }, false);
+
+        // Right click disable
+        window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            alert('Sorry, this function is disabled for security reasons.');
+        }, false);
+    </script>
 </head>
 
 <body>
