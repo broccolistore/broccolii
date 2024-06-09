@@ -19,14 +19,13 @@ body {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 5% repeat(10, auto) 5%;
     background-color: #1f356f;
-    
 }
 /* element send order start */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
   .mySlides {
     display: none;
     width: 100%;
@@ -43,6 +42,7 @@ body {
 .swal2-success-circular-line-left,
 .swal2-success-fix {
     background-color: #1f356f !important;
+
 }
 /* element send order end */
 /* header section start */
@@ -63,7 +63,7 @@ header .logo {
     color: white;
 }
 
-nav {
+.ul-large {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
@@ -71,14 +71,14 @@ nav {
     justify-content: center;
     align-items: center;
 }
-nav a {
+.ul-large a {
     color: white;
     font-family: 'Cairo', sans-serif;
     border-bottom: 3px solid #0a1951;
     /* padding: 18px; */
 
 }
-nav a:hover {
+.ul-large a:hover {
     color: #02071d;
     border-bottom: 5px solid ;
 
@@ -94,6 +94,77 @@ nav a:hover {
     color: #02071d;
     border-bottom: 5px solid ;
 }
+
+/* Mobile Start */
+.main-list {
+    display: none;
+}
+.list {
+    width: 50px;
+    height: 40px;
+    background-color: #123;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px; 
+}
+.list .option {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(241, 241, 241); 
+    border-radius: 5px;
+}
+.list .ch {
+    width: 15px;
+    transition: width 0.5s;
+}
+.list:hover .ch {
+    width: 30px;
+}
+.list:hover .ul-small {
+    display: block;
+}
+.ul-small {
+    display: none;
+    position: absolute;
+    background-color: #123;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+.ul-small::before {
+    content: "";
+    width: 0;
+    border: 10px solid white;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    left: 20%;
+    top: -20px;
+}
+.ul-small li:hover a {
+    padding-right: 20px;
+}
+.ul-small li a {
+    color: white;
+    transition: padding 0.5s;
+}
+.ul-small li:not(:last-child) {
+    border-bottom: 2px solid white;
+}   
+.ul-small li {
+    padding: 10px;
+}
+@media (max-width: 951px) {
+    .main-list {
+        display: block;
+    }
+    .ul-large {
+        display: none;
+    }
+}
+/* Mobile End */
 /* header section end */
 /* %% */
 /* section section start */
@@ -314,11 +385,8 @@ img {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-play-state: running;
-}
-.fix {
-    height: 78%;
-}
 
+}
 .content-4 img:hover {
     animation-play-state: paused;
 }
